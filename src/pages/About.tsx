@@ -44,7 +44,7 @@ const About: React.FC = () => (
           What is Project NexTech?
         </Typography>
         <Typography color="text.secondary" align="center">
-          We are a student-led international nonprofit organization teaching custom science, technology, engineering, and math (STEM) curricula to students at schools, libraries, and community centers worlldwide.
+          We are a student-led international nonprofit organization teaching custom science, technology, engineering, and math (STEM) curricula to students at schools, libraries, and community centers worldwide.
         </Typography>
       </Box>
       <Box textAlign="center">

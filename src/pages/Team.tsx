@@ -56,7 +56,7 @@ import jpImg from '../img/team/jp_pierce.png';
 import paulImg from '../img/team/nt_leader.png';
 import tayyarImg from '../img/team/nt_leader.png';
 import jocelynImg from '../img/team/nt_leader.png';
-import srinivasImg from '../img/team/nt_leader.png';
+import srinivasImg from '../img/team/srinivas_hatathodi.png';
 import rimaImg from '../img/team/nt_leader.png';
 import ntLeaderImg from '../img/team/nt_leader.png';
 import ph_1 from '../img/team/ph_1.png';
