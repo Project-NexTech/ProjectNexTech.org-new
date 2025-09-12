@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a68b68e9.css",
-    "main.js": "/static/js/main.d131db6f.js",
+    "main.js": "/static/js/main.f7082749.js",
     "static/js/488.5afa99d8.chunk.js": "/static/js/488.5afa99d8.chunk.js",
     "static/media/src_1.png": "/static/media/src_1.6ad9abc4b22259b724ac.png",
     "static/media/carousel_4.png": "/static/media/carousel_4.7f2dd4be5c636fecdc74.png",
@@ -88,10 +88,10 @@
     "static/media/mirabelle_egilmez.png": "/static/media/mirabelle_egilmez.6414c5876552e51a153b.png",
     "static/media/kush_kharia.png": "/static/media/kush_kharia.d8c5dcc9a256bb581cff.png",
     "static/media/colin_thompson.png": "/static/media/colin_thompson.ab5aa39e54d7ba8ef1bb.png",
+    "static/media/srinivas_hatathodi.png": "/static/media/srinivas_hatathodi.e7ef9e6441b03f7066f1.png",
     "static/media/daniel_eremin.png": "/static/media/daniel_eremin.07012a0344c8c310612e.png",
     "static/media/julian_garcia.png": "/static/media/julian_garcia.87aab5c01758a50efd46.png",
     "static/media/forest_liang.png": "/static/media/forest_liang.e1a8b2fdeb51f9519cbe.png",
-    "static/media/shounak_ray_chaudhuri.png": "/static/media/shounak_ray_chaudhuri.b9f44efa10f136b55a99.png",
     "static/media/ct_1.png": "/static/media/ct_1.921deda2568fad94cc9c.png",
     "static/media/ct_2.png": "/static/media/ct_2.921deda2568fad94cc9c.png",
     "static/media/ct_3.png": "/static/media/ct_3.921deda2568fad94cc9c.png",
@@ -212,6 +212,7 @@
     "static/media/kausik_ray_chaudhuri.png": "/static/media/kausik_ray_chaudhuri.a383f1b5d909ea023278.png",
     "static/media/gsdsef.png": "/static/media/gsdsef.28b13ad58fff547f73c6.png",
     "static/media/pryya_surarujiroj.png": "/static/media/pryya_surarujiroj.b7cac0cc97fdfa0f71a5.png",
+    "static/media/shounak_ray_chaudhuri.png": "/static/media/shounak_ray_chaudhuri.c1e83142d58fc8712e84.png",
     "static/media/nt_leader.png": "/static/media/nt_leader.79e842e16f92d8add13c.png",
     "static/media/jp_pierce.png": "/static/media/jp_pierce.9de2b4d61456ae2bd284.png",
     "static/media/carousel_6.png": "/static/media/carousel_6.588fd5d9674355037606.png",
@@ -240,11 +241,11 @@
     "static/media/inter-vietnamese-400-normal.woff2": "/static/media/inter-vietnamese-400-normal.44c9df135eec470b0ab6.woff2",
     "index.html": "/index.html",
     "main.a68b68e9.css.map": "/static/css/main.a68b68e9.css.map",
-    "main.d131db6f.js.map": "/static/js/main.d131db6f.js.map",
+    "main.f7082749.js.map": "/static/js/main.f7082749.js.map",
     "488.5afa99d8.chunk.js.map": "/static/js/488.5afa99d8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a68b68e9.css",
-    "static/js/main.d131db6f.js"
+    "static/js/main.f7082749.js"
   ]
 }
