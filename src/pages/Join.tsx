@@ -93,7 +93,7 @@ const Join: React.FC = () => (
             frameBorder="0"
             marginHeight={0}
             marginWidth={0}
-            style={{ background: '#fff', borderRadius: 8, width: '100%', minHeight: 400, filter: 'invert(1) hue-rotate(180.0deg)'}}
+            style={{ background: '#fff', borderRadius: 8, width: '100%', minHeight: 400, filter: 'invert(85%) hue-rotate(180.0deg)'}}
           >Loading…</iframe>
         </Box>
       </Box>

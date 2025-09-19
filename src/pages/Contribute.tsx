@@ -64,7 +64,7 @@ const Contribute: React.FC = () => {
               scrolling="no"
               height="900px"
               width="100%"
-              style={{ maxWidth: 500, minWidth: 250, maxHeight: 'none', border: 'none', borderRadius: 8, marginLeft: 'auto', marginRight: 'auto', filter: 'invert(1) hue-rotate(180.0deg)'}}
+              style={{ maxWidth: 500, minWidth: 250, maxHeight: 'none', border: 'none', borderRadius: 8, marginLeft: 'auto', marginRight: 'auto', filter: 'invert(85%) hue-rotate(180.0deg)'}}
               allow="payment"
             ></iframe>
           </Box>
@@ -107,7 +107,7 @@ const Contribute: React.FC = () => {
               frameBorder="0"
               marginHeight={0}
               marginWidth={0}
-              style={{ background: '#fff', borderRadius: 8, width: '100%', minHeight: 400, filter: 'invert(1) hue-rotate(180.0deg)'}}
+              style={{ background: '#fff', borderRadius: 8, width: '100%', minHeight: 400, filter: 'invert(80%) hue-rotate(180.0deg)'}}
             >Loading…</iframe>
           </Box>
         </Box>
