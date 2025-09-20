@@ -25,7 +25,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build --cname beta.projectnextech.org"
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-dom": "^19.1.9",
     "gh-pages": "^6.3.0"
   }
 }

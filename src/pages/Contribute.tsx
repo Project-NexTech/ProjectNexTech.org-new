@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import { Box, Typography, Grid, Card, CardContent, Button } from '@mui/material';
 import { bigNumbers as globalBigNumbers } from '../data/bigNumbers.ts';
+import { InvertColors } from '@mui/icons-material';
 
 const contributeTopColumns = [
   {
@@ -63,7 +64,7 @@ const Contribute: React.FC = () => {
               scrolling="no"
               height="900px"
               width="100%"
-              style={{ maxWidth: 500, minWidth: 250, maxHeight: 'none', border: 'none', borderRadius: 8, marginLeft: 'auto', marginRight: 'auto' }}
+              style={{ maxWidth: 500, minWidth: 250, maxHeight: 'none', border: 'none', borderRadius: 8, marginLeft: 'auto', marginRight: 'auto', filter: 'invert(85%) hue-rotate(180.0deg)'}}
               allow="payment"
             ></iframe>
           </Box>
@@ -106,7 +107,7 @@ const Contribute: React.FC = () => {
               frameBorder="0"
               marginHeight={0}
               marginWidth={0}
-              style={{ background: '#fff', borderRadius: 8, width: '100%', minHeight: 400 }}
+              style={{ background: '#fff', borderRadius: 8, width: '100%', minHeight: 400, filter: 'invert(80%) hue-rotate(180.0deg)'}}
             >Loading…</iframe>
           </Box>
         </Box>
