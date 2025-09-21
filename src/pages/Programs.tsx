@@ -195,9 +195,9 @@ const Programs: React.FC = () => {
         {/* Engineering courses with carousels */}
   <Box bgcolor="#473024" color="#fff" borderRadius={2} p={2} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="flex-start" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' } }}>
           <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay={false} width="100%" dynamicHeight={false}>
-            <img src={img_1_1_1} alt="Maker Space Workshops 1" style={{ borderRadius: 8, maxHeight: 240, objectFit: 'cover' }} />
-            <img src={img_1_1_2} alt="Maker Space Workshops 2" style={{ borderRadius: 8, maxHeight: 240, objectFit: 'cover' }} />
-            <img src={img_1_1_3} alt="Maker Space Workshops 3" style={{ borderRadius: 8, maxHeight: 240, objectFit: 'cover' }} />
+            <img src={img_1_1_1} alt="Maker Space Workshops 1" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_1_1_2} alt="Maker Space Workshops 2" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_1_1_3} alt="Maker Space Workshops 3" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
           </Carousel>
           <Typography fontWeight={700} mt={2} fontFamily="Inter, Arial, sans-serif" sx={{ fontSize: { xs: 18, md: 20 } }}>[1.1] Maker Space Workshops**</Typography>
           <Typography color="text.secondary" fontFamily="Inter, Arial, sans-serif" sx={{ whiteSpace: 'pre-line' }}>
@@ -209,9 +209,9 @@ const Programs: React.FC = () => {
         </Box>
   <Box bgcolor="#473024" color="#fff" borderRadius={2} p={2} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="flex-start" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' } }}>
           <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay={false} width="100%" dynamicHeight={false}>
-            <img src={img_1_2_1} alt="Intro to Engineering 1" style={{ borderRadius: 8, maxHeight: 240, objectFit: 'cover' }} />
-            <img src={img_1_2_2} alt="Intro to Engineering 2" style={{ borderRadius: 8, maxHeight: 240, objectFit: 'cover' }} />
-            <img src={img_1_2_3} alt="Intro to Engineering 3" style={{ borderRadius: 8, maxHeight: 240, objectFit: 'cover' }} />
+            <img src={img_1_2_1} alt="Intro to Engineering 1" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_1_2_2} alt="Intro to Engineering 2" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_1_2_3} alt="Intro to Engineering 3" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
           </Carousel>
           <Typography fontWeight={700} mt={2} fontFamily="Inter, Arial, sans-serif" sx={{ fontSize: { xs: 18, md: 20 } }}>[1.2] Intro to Engineering**</Typography>
           <Typography color="text.secondary" fontFamily="Inter, Arial, sans-serif" sx={{ whiteSpace: 'pre-line' }}>
@@ -223,9 +223,9 @@ const Programs: React.FC = () => {
         </Box>
   <Box bgcolor="#473024" color="#fff" borderRadius={2} p={2} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="flex-start" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' } }}>
           <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay={false} width="100%" dynamicHeight={false}>
-            <img src={img_1_3_1} alt="Intro to TinkerCAD 1" style={{ borderRadius: 8, maxHeight: 240, objectFit: 'cover' }} />
-            <img src={img_1_3_2} alt="Intro to TinkerCAD 2" style={{ borderRadius: 8, maxHeight: 240, objectFit: 'cover' }} />
-            <img src={img_1_3_3} alt="Intro to TinkerCAD 3" style={{ borderRadius: 8, maxHeight: 240, objectFit: 'cover' }} />
+            <img src={img_1_3_1} alt="Intro to TinkerCAD 1" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_1_3_2} alt="Intro to TinkerCAD 2" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_1_3_3} alt="Intro to TinkerCAD 3" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
           </Carousel>
           <Typography fontWeight={700} mt={2} fontFamily="Inter, Arial, sans-serif" sx={{ fontSize: { xs: 18, md: 20 } }}>[1.3] Intro to TinkerCAD*</Typography>
           <Typography color="text.secondary" fontFamily="Inter, Arial, sans-serif" sx={{ whiteSpace: 'pre-line' }}>
@@ -237,9 +237,9 @@ const Programs: React.FC = () => {
         </Box>
   <Box bgcolor="#473024" color="#fff" borderRadius={2} p={2} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="flex-start" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' } }}>
           <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay={false} width="100%" dynamicHeight={false}>
-            <img src={img_1_4_1} alt="Intro to Onshape 1" style={{ borderRadius: 8, maxHeight: 240, objectFit: 'cover' }} />
-            <img src={img_1_4_2} alt="Intro to Onshape 2" style={{ borderRadius: 8, maxHeight: 240, objectFit: 'cover' }} />
-            <img src={img_1_4_3} alt="Intro to Onshape 3" style={{ borderRadius: 8, maxHeight: 240, objectFit: 'cover' }} />
+            <img src={img_1_4_1} alt="Intro to Onshape 1" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_1_4_2} alt="Intro to Onshape 2" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_1_4_3} alt="Intro to Onshape 3" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
           </Carousel>
           <Typography fontWeight={700} mt={2} fontFamily="Inter, Arial, sans-serif" sx={{ fontSize: { xs: 18, md: 20 } }}>[1.4] Intro to Onshape*</Typography>
           <Typography color="text.secondary" fontFamily="Inter, Arial, sans-serif" sx={{ whiteSpace: 'pre-line' }}>
@@ -251,9 +251,9 @@ const Programs: React.FC = () => {
         </Box>
   <Box bgcolor="#473024" color="#fff" borderRadius={2} p={2} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="flex-start" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' } }}>
           <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay={false} width="100%" dynamicHeight={false}>
-            <img src={img_1_5_1} alt="Intro to Electrical Engineering 1" style={{ borderRadius: 8, maxHeight: 240, objectFit: 'cover' }} />
-            <img src={img_1_5_2} alt="Intro to Electrical Engineering 2" style={{ borderRadius: 8, maxHeight: 240, objectFit: 'cover' }} />
-            <img src={img_1_5_3} alt="Intro to Electrical Engineering 3" style={{ borderRadius: 8, maxHeight: 240, objectFit: 'cover' }} />
+            <img src={img_1_5_1} alt="Intro to Electrical Engineering 1" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_1_5_2} alt="Intro to Electrical Engineering 2" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_1_5_3} alt="Intro to Electrical Engineering 3" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
           </Carousel>
           <Typography fontWeight={700} mt={2} fontFamily="Inter, Arial, sans-serif" sx={{ fontSize: { xs: 18, md: 20 } }}>[1.5] Intro to Electrical Engineering**</Typography>
           <Typography color="text.secondary" fontFamily="Inter, Arial, sans-serif" sx={{ whiteSpace: 'pre-line' }}>
@@ -280,9 +280,9 @@ const Programs: React.FC = () => {
         {/* Updated Mentoring courses */}
   <Box bgcolor="#473024" color="#fff" borderRadius={2} p={2} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="flex-start" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' } }}>
           <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay={false} width="100%" dynamicHeight={false}>
-            <img src={img_2_1_1} alt="Intro to FLL 1" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover', width: '100%' }} />
-            <img src={img_2_1_2} alt="Intro to FLL 2" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover', width: '100%' }} />
-            <img src={img_2_1_3} alt="Intro to FLL 3" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover', width: '100%' }} />
+            <img src={img_2_1_1} alt="Intro to FLL 1" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_2_1_2} alt="Intro to FLL 2" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_2_1_3} alt="Intro to FLL 3" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
           </Carousel>
           <Typography fontWeight={700} mt={2} fontFamily="Inter, Arial, sans-serif" sx={{ fontSize: { xs: 18, md: 20 } }}>[2.1] Intro to FLL**</Typography>
           <Typography color="text.secondary" fontFamily="Inter, Arial, sans-serif" sx={{ whiteSpace: 'pre-line' }}>
@@ -294,9 +294,9 @@ const Programs: React.FC = () => {
         </Box>
   <Box bgcolor="#473024" color="#fff" borderRadius={2} p={2} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="flex-start" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' } }}>
           <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay={false} width="100%" dynamicHeight={false}>
-            <img src={img_2_2_1} alt="Intro to FTC 1" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover', width: '100%' }} />
-            <img src={img_2_2_2} alt="Intro to FTC 2" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover', width: '100%' }} />
-            <img src={img_2_2_3} alt="Intro to FTC 3" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover', width: '100%' }} />
+            <img src={img_2_2_1} alt="Intro to FTC 1" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_2_2_2} alt="Intro to FTC 2" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_2_2_3} alt="Intro to FTC 3" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
           </Carousel>
           <Typography fontWeight={700} mt={2} fontFamily="Inter, Arial, sans-serif" sx={{ fontSize: { xs: 18, md: 20 } }}>[2.2] Intro to FTC**</Typography>
           <Typography color="text.secondary" fontFamily="Inter, Arial, sans-serif" sx={{ whiteSpace: 'pre-line' }}>
@@ -308,9 +308,9 @@ const Programs: React.FC = () => {
         </Box>
   <Box bgcolor="#473024" color="#fff" borderRadius={2} p={2} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="flex-start" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' } }}>
           <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay={false} width="100%" dynamicHeight={false}>
-            <img src={img_2_3_1} alt="Intro to Science Fair 1" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover', width: '100%' }} />
-            <img src={img_2_3_2} alt="Intro to Science Fair 2" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover', width: '100%' }} />
-            <img src={img_2_3_3} alt="Intro to Science Fair 3" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover', width: '100%' }} />
+            <img src={img_2_3_1} alt="Intro to Science Fair 1" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_2_3_2} alt="Intro to Science Fair 2" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_2_3_3} alt="Intro to Science Fair 3" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
           </Carousel>
           <Typography fontWeight={700} mt={2} fontFamily="Inter, Arial, sans-serif" sx={{ fontSize: { xs: 18, md: 20 } }}>[2.3] Intro to Science Fair*</Typography>
           <Typography color="text.secondary" fontFamily="Inter, Arial, sans-serif" sx={{ whiteSpace: 'pre-line' }}>
@@ -322,9 +322,9 @@ const Programs: React.FC = () => {
         </Box>
   <Box bgcolor="#473024" color="#fff" borderRadius={2} p={2} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="flex-start" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' } }}>
           <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay={false} width="100%" dynamicHeight={false}>
-            <img src={img_2_4_1} alt="Intro to Research 1" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover', width: '100%' }} />
-            <img src={img_2_4_2} alt="Intro to Research 2" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover', width: '100%' }} />
-            <img src={img_2_4_3} alt="Intro to Research 3" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover', width: '100%' }} />
+            <img src={img_2_4_1} alt="Intro to Research 1" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_2_4_2} alt="Intro to Research 2" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_2_4_3} alt="Intro to Research 3" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
           </Carousel>
           <Typography fontWeight={700} mt={2} fontFamily="Inter, Arial, sans-serif" sx={{ fontSize: { xs: 18, md: 20 } }}>[2.4] Intro to Research**</Typography>
           <Typography color="text.secondary" fontFamily="Inter, Arial, sans-serif" sx={{ whiteSpace: 'pre-line' }}>
@@ -351,9 +351,9 @@ const Programs: React.FC = () => {
         {/* Updated Programming courses */}
         <Box bgcolor="#473024" color="#fff" borderRadius={2} p={2} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="flex-start" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' } }}>
           <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay={false} width="100%" dynamicHeight={false}>
-            <img src={img_3_1_1} alt="Intro to Python 1" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover' }} />
-            <img src={img_3_1_2} alt="Intro to Python 2" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover' }} />
-            <img src={img_3_1_3} alt="Intro to Python 3" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover' }} />
+            <img src={img_3_1_1} alt="Intro to Python 1" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_3_1_2} alt="Intro to Python 2" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_3_1_3} alt="Intro to Python 3" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
           </Carousel>
           <Typography fontWeight={700} mt={2} fontFamily="Inter, Arial, sans-serif" sx={{ fontSize: { xs: 18, md: 20 } }}>[3.1] Intro to Python*</Typography>
           <Typography color="text.secondary" fontFamily="Inter, Arial, sans-serif" sx={{ whiteSpace: 'pre-line' }}>
@@ -365,9 +365,9 @@ const Programs: React.FC = () => {
         </Box>
         <Box bgcolor="#473024" color="#fff" borderRadius={2} p={2} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="flex-start" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' } }}>
           <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay={false} width="100%" dynamicHeight={false}>
-            <img src={img_3_2_1} alt="Intro to Java 1" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover' }} />
-            <img src={img_3_2_2} alt="Intro to Java 2" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover' }} />
-            <img src={img_3_2_3} alt="Intro to Java 3" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover' }} />
+            <img src={img_3_2_1} alt="Intro to Java 1" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_3_2_2} alt="Intro to Java 2" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_3_2_3} alt="Intro to Java 3" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
           </Carousel>
           <Typography fontWeight={700} mt={2} fontFamily="Inter, Arial, sans-serif" sx={{ fontSize: { xs: 18, md: 20 } }}>[3.2] Intro to Java*</Typography>
           <Typography color="text.secondary" fontFamily="Inter, Arial, sans-serif" sx={{ whiteSpace: 'pre-line' }}>
@@ -379,9 +379,9 @@ const Programs: React.FC = () => {
         </Box>
         <Box bgcolor="#473024" color="#fff" borderRadius={2} p={2} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="flex-start" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' } }}>
           <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay={false} width="100%" dynamicHeight={false}>
-            <img src={img_3_3_1} alt="Intro to Artificial Intelligence 1" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover' }} />
-            <img src={img_3_3_2} alt="Intro to Artificial Intelligence 2" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover' }} />
-            <img src={img_3_3_3} alt="Intro to Artificial Intelligence 3" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover' }} />
+            <img src={img_3_3_1} alt="Intro to Artificial Intelligence 1" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_3_3_2} alt="Intro to Artificial Intelligence 2" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_3_3_3} alt="Intro to Artificial Intelligence 3" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
           </Carousel>
           <Typography fontWeight={700} mt={2} fontFamily="Inter, Arial, sans-serif" sx={{ fontSize: { xs: 18, md: 20 } }}>[3.3] Intro to Artificial Intelligence*</Typography>
           <Typography color="text.secondary" fontFamily="Inter, Arial, sans-serif" sx={{ whiteSpace: 'pre-line' }}>
@@ -393,9 +393,9 @@ const Programs: React.FC = () => {
         </Box>
         <Box bgcolor="#473024" color="#fff" borderRadius={2} p={2} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="flex-start" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' } }}>
           <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay={false} width="100%" dynamicHeight={false}>
-            <img src={img_3_4_1} alt="Intro to Front-End Development 1" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover' }} />
-            <img src={img_3_4_2} alt="Intro to Front-End Development 2" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover' }} />
-            <img src={img_3_4_3} alt="Intro to Front-End Development 3" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover' }} />
+            <img src={img_3_4_1} alt="Intro to Front-End Development 1" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_3_4_2} alt="Intro to Front-End Development 2" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_3_4_3} alt="Intro to Front-End Development 3" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
           </Carousel>
           <Typography fontWeight={700} mt={2} fontFamily="Inter, Arial, sans-serif" sx={{ fontSize: { xs: 18, md: 20 } }}>[3.4] Intro to Front-End Development*</Typography>
           <Typography color="text.secondary" fontFamily="Inter, Arial, sans-serif" sx={{ whiteSpace: 'pre-line' }}>
@@ -407,9 +407,9 @@ const Programs: React.FC = () => {
         </Box>
         <Box bgcolor="#473024" color="#fff" borderRadius={2} p={2} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="flex-start" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' } }}>
           <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay={false} width="100%" dynamicHeight={false}>
-            <img src={img_3_5_1} alt="Intro to Programming with Scratch 1" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover' }} />
-            <img src={img_3_5_2} alt="Intro to Programming with Scratch 2" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover' }} />
-            <img src={img_3_5_3} alt="Intro to Programming with Scratch 3" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover' }} />
+            <img src={img_3_5_1} alt="Intro to Programming with Scratch 1" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_3_5_2} alt="Intro to Programming with Scratch 2" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_3_5_3} alt="Intro to Programming with Scratch 3" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
           </Carousel>
           <Typography fontWeight={700} mt={2} fontFamily="Inter, Arial, sans-serif" sx={{ fontSize: { xs: 18, md: 20 } }}>[3.5] Intro to Programming with Scratch*</Typography>
           <Typography color="text.secondary" fontFamily="Inter, Arial, sans-serif" sx={{ whiteSpace: 'pre-line' }}>
@@ -436,9 +436,9 @@ const Programs: React.FC = () => {
         {/* Updated Physics/Math courses */}
         <Box bgcolor="#473024" color="#fff" borderRadius={2} p={2} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="flex-start" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' } }}>
           <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay={false} width="100%" dynamicHeight={false}>
-            <img src={img_4_1_1} alt="Intro to Algebra and Geometry 1" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover' }} />
-            <img src={img_4_1_2} alt="Intro to Algebra and Geometry 2" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover' }} />
-            <img src={img_4_1_3} alt="Intro to Algebra and Geometry 3" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover' }} />
+            <img src={img_4_1_1} alt="Intro to Algebra and Geometry 1" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_4_1_2} alt="Intro to Algebra and Geometry 2" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_4_1_3} alt="Intro to Algebra and Geometry 3" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
           </Carousel>
           <Typography fontWeight={700} mt={2} fontFamily="Inter, Arial, sans-serif" sx={{ fontSize: { xs: 18, md: 20 } }}>[4.1] Intro to Algebra and Geometry**</Typography>
           <Typography color="text.secondary" fontFamily="Inter, Arial, sans-serif" sx={{ whiteSpace: 'pre-line' }}>
@@ -450,9 +450,9 @@ const Programs: React.FC = () => {
         </Box>
         <Box bgcolor="#473024" color="#fff" borderRadius={2} p={2} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="flex-start" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' } }}>
           <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay={false} width="100%" dynamicHeight={false}>
-            <img src={img_4_2_1} alt="Intro to Classical Physics 1" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover' }} />
-            <img src={img_4_2_2} alt="Intro to Classical Physics 2" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover' }} />
-            <img src={img_4_2_3} alt="Intro to Classical Physics 3" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover' }} />
+            <img src={img_4_2_1} alt="Intro to Classical Physics 1" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_4_2_2} alt="Intro to Classical Physics 2" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_4_2_3} alt="Intro to Classical Physics 3" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
           </Carousel>
           <Typography fontWeight={700} mt={2} fontFamily="Inter, Arial, sans-serif" sx={{ fontSize: { xs: 18, md: 20 } }}>[4.2] Intro to Classical Physics**</Typography>
           <Typography color="text.secondary" fontFamily="Inter, Arial, sans-serif" sx={{ whiteSpace: 'pre-line' }}>
@@ -464,9 +464,9 @@ const Programs: React.FC = () => {
         </Box>
         <Box bgcolor="#473024" color="#fff" borderRadius={2} p={2} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="flex-start" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' } }}>
           <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay={false} width="100%" dynamicHeight={false}>
-            <img src={img_4_3_1} alt="Intro to Electromagnetism 1" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover' }} />
-            <img src={img_4_3_2} alt="Intro to Electromagnetism 2" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover' }} />
-            <img src={img_4_3_3} alt="Intro to Electromagnetism 3" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover' }} />
+            <img src={img_4_3_1} alt="Intro to Electromagnetism 1" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_4_3_2} alt="Intro to Electromagnetism 2" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_4_3_3} alt="Intro to Electromagnetism 3" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
           </Carousel>
           <Typography fontWeight={700} mt={2} fontFamily="Inter, Arial, sans-serif" sx={{ fontSize: { xs: 18, md: 20 } }}>[4.3] Intro to Electromagnetism**</Typography>
           <Typography color="text.secondary" fontFamily="Inter, Arial, sans-serif" sx={{ whiteSpace: 'pre-line' }}>
@@ -493,9 +493,9 @@ const Programs: React.FC = () => {
         {/* Updated Natural Sciences courses */}
         <Box bgcolor="#473024" color="#fff" borderRadius={2} p={2} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="flex-start" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' } }}>
           <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay={false} width="100%" dynamicHeight={false}>
-            <img src={img_5_1_1} alt="Intro to Earth Science 1" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover' }} />
-            <img src={img_5_1_2} alt="Intro to Earth Science 2" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover' }} />
-            <img src={img_5_1_3} alt="Intro to Earth Science 3" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover' }} />
+            <img src={img_5_1_1} alt="Intro to Earth Science 1" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_5_1_2} alt="Intro to Earth Science 2" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_5_1_3} alt="Intro to Earth Science 3" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
           </Carousel>
           <Typography fontWeight={700} mt={2} fontFamily="Inter, Arial, sans-serif" sx={{ fontSize: { xs: 18, md: 20 } }}>[5.1] Intro to Earth Science**</Typography>
           <Typography color="text.secondary" fontFamily="Inter, Arial, sans-serif" sx={{ whiteSpace: 'pre-line' }}>
@@ -507,9 +507,9 @@ const Programs: React.FC = () => {
         </Box>
         <Box bgcolor="#473024" color="#fff" borderRadius={2} p={2} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="flex-start" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' } }}>
           <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay={false} width="100%" dynamicHeight={false}>
-            <img src={img_5_2_1} alt="Intro to Biology 1" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover' }} />
-            <img src={img_5_2_2} alt="Intro to Biology 2" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover' }} />
-            <img src={img_5_2_3} alt="Intro to Biology 3" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover' }} />
+            <img src={img_5_2_1} alt="Intro to Biology 1" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_5_2_2} alt="Intro to Biology 2" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_5_2_3} alt="Intro to Biology 3" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
           </Carousel>
           <Typography fontWeight={700} mt={2} fontFamily="Inter, Arial, sans-serif" sx={{ fontSize: { xs: 18, md: 20 } }}>[5.2] Intro to Biology**</Typography>
           <Typography color="text.secondary" fontFamily="Inter, Arial, sans-serif" sx={{ whiteSpace: 'pre-line' }}>
@@ -521,9 +521,9 @@ const Programs: React.FC = () => {
         </Box>
         <Box bgcolor="#473024" color="#fff" borderRadius={2} p={2} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="flex-start" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' } }}>
           <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay={false} width="100%" dynamicHeight={false}>
-            <img src={img_5_3_1} alt="Intro to Chemistry 1" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover' }} />
-            <img src={img_5_3_2} alt="Intro to Chemistry 2" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover' }} />
-            <img src={img_5_3_3} alt="Intro to Chemistry 3" style={{ borderRadius: 8, maxHeight: 180, objectFit: 'cover' }} />
+            <img src={img_5_3_1} alt="Intro to Chemistry 1" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_5_3_2} alt="Intro to Chemistry 2" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            <img src={img_5_3_3} alt="Intro to Chemistry 3" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
           </Carousel>
           <Typography fontWeight={700} mt={2} fontFamily="Inter, Arial, sans-serif" sx={{ fontSize: { xs: 18, md: 20 } }}>[5.3] Intro to Chemistry**</Typography>
           <Typography color="text.secondary" fontFamily="Inter, Arial, sans-serif" sx={{ whiteSpace: 'pre-line' }}>
