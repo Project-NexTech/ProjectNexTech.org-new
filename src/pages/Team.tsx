@@ -58,6 +58,7 @@ import tayyarImg from '../img/team/nt_leader.png';
 import jocelynImg from '../img/team/nt_leader.png';
 import srinivasImg from '../img/team/srinivas_hatathodi.png';
 import rimaImg from '../img/team/nt_leader.png';
+import jayatiImg from '../img/team/jayati_babla.png';
 import ntLeaderImg from '../img/team/nt_leader.png';
 import ph_1 from '../img/team/ph_1.png';
 import ph_2 from '../img/team/ph_2.png';
@@ -138,6 +139,11 @@ import pk_2 from '../img/team/pk_2.png';
 import pk_3 from '../img/team/pk_3.png';
 import pk_4 from '../img/team/pk_4.png';
 import pk_5 from '../img/team/pk_5.png';
+import jb_1 from '../img/team/jb_1.png';
+import jb_2 from '../img/team/jb_2.png';
+import jb_3 from '../img/team/jb_3.png';
+import jb_4 from '../img/team/jb_4.png';
+import jb_5 from '../img/team/jb_5.png';
 
 import me_1 from '../img/team/me_1.png';
 import me_2 from '../img/team/me_2.png';
@@ -200,6 +206,7 @@ const curriculumManagers = [
   { name: 'Julian Garcia', images: [julianImg], role: 'Programming Manager' },
   { name: 'Colin Thompson', images: [colinImg], role: 'Physics/Math Manager' },
   { name: 'Peyton Slape', images: [peytonImg], role: 'Natural Sciences Manager' },
+  { name: 'Jayati Babla', images: [jayatiImg], role: 'Natural Sciences Manager'},
   { name: 'Daniel Eremin', images: [danielImg], role: 'Webmaster' },
 ];
 const outreachManagers = [
@@ -282,6 +289,8 @@ const TeamGrid = ({ team }: { team: { name: string; role: string; images: string
         return [ct_1, ct_2, ct_3, ct_4, ct_5];
       case 'Daniel Eremin':
         return [de_1, de_2, de_3, de_4, de_5];
+      case 'Jayati Babla':
+        return [jb_1, jb_2, jb_3, jb_4, jb_5];
       case 'Praem Kumar':
         return [pk_1, pk_2, pk_3, pk_4, pk_5];
       case 'Pryya Surarujiroj':
