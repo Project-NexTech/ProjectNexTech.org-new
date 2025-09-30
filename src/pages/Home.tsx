@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Box, Typography, Button, Grid, Card, CardContent } from '@mui/material';
+import { Box, Typography, Button, Card, CardContent } from '@mui/material';
 import { Carousel } from 'react-responsive-carousel';
 import { Link as RouterLink } from 'react-router-dom';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -79,11 +79,11 @@ const Home: React.FC = () => (
           Free and effective STEM education
         </Typography>
   <Typography variant="h5" sx={{ fontFamily: 'Inter, Arial, sans-serif', color: '#b0b0b0', mb: 2 }}>
-          Join our global community for interactive, accessible, and high-quality STEM education.
-        </Typography>
-  <Grid container spacing={2} mb={0}>
+        Join our global community for interactive, accessible, and high-quality STEM education.
+  </Typography>
+  <Box display="grid" gridTemplateColumns={{ xs: '1fr', sm: '1fr 1fr' }} gap={2} sx={{ mb: 0 }}>
           {buttons.map((btn, idx) => (
-            <Grid item xs={12} sm={6} key={btn.label}>
+            <Box key={btn.label}>
               <Button
                 fullWidth
                 variant={btn.color === 'primary' ? 'contained' : 'contained'}
@@ -104,9 +104,9 @@ const Home: React.FC = () => (
               >
                 {btn.label}
               </Button>
-            </Grid>
+            </Box>
           ))}
-        </Grid>
+        </Box>
       </Box>
       {/* Spacer between left content and carousel (desktop only) */}
       <Box display={{ xs: 'none', md: 'block', lg: 'block' }} sx={{ width: '7.5vw', minWidth: '7.5vw' }} />

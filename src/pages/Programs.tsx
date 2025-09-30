@@ -59,9 +59,8 @@ import img_5_2_3 from '../img/programs/5_2_3.png';
 import img_5_3_1 from '../img/programs/5_3_1.png';
 import img_5_3_2 from '../img/programs/5_3_2.png';
 import img_5_3_3 from '../img/programs/5_3_3.png';
-import { Box, Typography, Grid, Card, CardContent, Button, Collapse, IconButton } from '@mui/material';
+import { Box, Typography} from '@mui/material';
 import { Carousel } from 'react-responsive-carousel';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const curriculumPhilosophy = [
