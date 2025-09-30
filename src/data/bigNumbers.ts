@@ -7,7 +7,7 @@ export const bigNumbers = [
   { number: '12+', label: 'Countries Reached' },
   { number: '4300+', label: 'Volunteer Hours' },
   { number: '20+', label: 'Courses Made' },
-  { number: '$6.1k+', label: 'Amount Raised' },
+  { number: '$8.1k+', label: 'Amount Raised' },
   { number: '90+', label: 'Programs Run' },
   { number: '47+', label: 'Regions' },
 ];

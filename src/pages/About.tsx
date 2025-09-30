@@ -13,25 +13,15 @@ import gallery5 from '../img/gallery_5.png';
 import gallery6 from '../img/gallery_6.png';
 import gallery7 from '../img/gallery_7.png';
 import gallery8 from '../img/gallery_8.png';
+import { bigNumbers } from '../data/bigNumbers.ts';
 import { Box, Typography } from '@mui/material';
-
-const bigNumbers = [
-  { number: '1125+', label: 'Students Taught' },
-  { number: '216+', label: 'Student Volunteers' },
-  { number: '12+', label: 'Countries Reached' },
-  { number: '4300+', label: 'Volunteer Hours' },
-  { number: '20+', label: 'Courses Made' },
-  { number: '$6.1k+', label: 'Amount Raised' },
-  { number: '90+', label: 'Programs Run' },
-  { number: '47+', label: 'Regions' },
-];
 
 const partners = [
   { name: 'City of San Diego', logo: cityOfSanDiego, subtitle: 'We have a Right of Entry contract with the City of San Diego, which allows us to easily run programs at all San Diego Branch Library locations. In exchange for this permission, we provide free STEM programs for library patrons and community members.', url: 'https://www.sandiego.gov/' },
   { name: 'International Research Olympiad (IRO)', logo: iro, subtitle: 'We are an IRO partner, so all Project NexTech school clubs are IRO-affiliated, and some of our Research curriculum was developed by the IRO. Our mission aligns with their mission of promoting STEM and research across the world.', url: 'https://www.internationalresearcholympiad.org/' },
   { name: 'Greater San Diego Science and Engineering Fair (GSDSEF)', logo: gsdsef, subtitle: 'We co-host the GSDSEF\'s annual bootcamps for students wanting to participate in the Fair across San Diego. We provide insurance coverage, locations, and students for the events. We also co-developed our [2.3] Intro to Science Fair course with the GSDSEF Student Leadership Board.', url: 'https://www.gsdsef.org/' },
   { name: 'Francis Parker School', logo: fps, subtitle: 'The eight founding members of Project NexTech were from Francis Parker School. We have a Facilities Use Agreement with the School to be able to host programs on campus for the Linda Vista and wider San Diego community. Our goals align with their mission to promote academic excellence.', url: 'https://www.francisparker.org/' },
-  { name: 'Qualcomm', logo: qualcomm, subtitle: 'We have received over $2000 in funding from Qualcomm through grant-matching, and have applied for more. We also host programs at the Qualcomm campus in San Diego for the Sorrento Valley and wider San Diego community.', url: 'https://www.qualcomm.com/' },
+  { name: 'Qualcomm', logo: qualcomm, subtitle: 'We have received over $4000 in funding from Qualcomm through their grant programs. We also host programs at the Qualcomm campus in San Diego for the Sorrento Valley and wider San Diego community.', url: 'https://www.qualcomm.com/' },
   { name: 'Google', logo: google, subtitle: 'We have a Google for Nonprofits plan, which allows us to use Google Workspace for our work. Free access to this software has been crucial for our Google Drive, Gmail, Google accounts, and many of the embeds powering this website.', url: 'https://www.google.org/' },
 ];
 
