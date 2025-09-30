@@ -167,10 +167,8 @@ const Home: React.FC = () => (
         width="100%"
       >
         {bigNumbers.map((item, idx) => {
-          // Numbers to highlight in orange or blue
-          const orangeNumbers = ['1125+', '4300+'];
-          const blueNumbers = ['12+', '90+'];
-          const numberColor = orangeNumbers.includes(item.number) ? '#f24c02' : blueNumbers.includes(item.number) ? '#4083cc' : '#fff';
+          // Alternate between orange and blue colors
+          const numberColor = idx % 2 === 0 ? '#f24c02' : '#4083cc';
           return (
             <Card key={idx} sx={{ background: '#473024', color: '#fff', textAlign: 'center', py: { xs: 1, md: 3 }, boxShadow: 4, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
               <CardContent>

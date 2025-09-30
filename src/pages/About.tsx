@@ -98,9 +98,13 @@ const About: React.FC = () => (
     <Box mb={6}>
       <Box display="grid" gridTemplateColumns={{ xs: '1fr 1fr', md: '1fr 1fr 1fr 1fr' }} gridTemplateRows={{ xs: '1fr 1fr 1fr 1fr', md: '1fr 1fr' }} gap={4}>
         {bigNumbers.map((item, idx) => {
-          // Numbers to highlight in blue
-          const blueNumbers = ['20+', '216+', '90+', '4300+'];
-          const numberColor = blueNumbers.includes(item.number) ? '#4083cc' : '#f24c02';
+          // Calculate row and adjust color pattern
+          const row = Math.floor(idx / 4);
+          // For first row: orange-blue-orange-blue
+          // For second row: blue-orange-blue-orange
+          const numberColor = row === 0 ? 
+            (idx % 2 === 0 ? '#f24c02' : '#4083cc') : 
+            (idx % 2 === 0 ? '#4083cc' : '#f24c02');
           return (
             <Box key={idx} bgcolor="#473024" color="#fff" borderRadius={2} textAlign="center" py={5} px={2} display="flex" flexDirection="column" alignItems="center" justifyContent="center">
               <Typography variant="h3" fontWeight={700} color={numberColor} fontFamily="Inter, Arial, sans-serif">
