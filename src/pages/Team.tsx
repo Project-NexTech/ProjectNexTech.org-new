@@ -199,7 +199,6 @@ const curriculumManagers = [
 ];
 const outreachManagers = [
   { name: 'Open Position', images: [ntLeaderImg], role: 'Marketing Manager' },
-  { name: 'Praem Kumar', images: [praemImg], role: 'Logistics Manager' },
   { name: 'Pryya Surarujiroj', images: [pryyaImg], role: 'Logistics Manager' },
   { name: 'Mirabelle Egilmez', images: [mirabelleImg], role: 'Policy/International Manager' },
 ];
