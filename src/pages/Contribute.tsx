@@ -1,8 +1,6 @@
-
-import React, { useEffect } from 'react';
-import { Box, Typography, Grid, Card, CardContent, Button } from '@mui/material';
+import React from 'react';
+import { Box, Typography, Card, CardContent} from '@mui/material';
 import { bigNumbers as globalBigNumbers } from '../data/bigNumbers.ts';
-import { InvertColors } from '@mui/icons-material';
 
 const contributeTopColumns = [
   {
@@ -57,6 +55,7 @@ const Contribute: React.FC = () => {
   <Box bgcolor="#473024" color="#fff" borderRadius={2} p={4} border="3px solid #f24c02" display="flex" flexDirection="column" alignItems="center" justifyContent="center" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' }, maxWidth: { xs: '100vw' }, overflowX: 'auto' }}>
           <Box sx={{ display: 'flex', borderRadius: 2, overflow: 'hidden', boxShadow: 2, width: '100%' }}>
             <iframe
+              title="Donorbox"
               src="https://donorbox.org/embed/donate-to-project-nextech?default_interval=m&designation=General+donation+that+our+student+leaders+may+allocate+as+needed&amount=100"
               name="donorbox"
               seamless
@@ -101,6 +100,7 @@ const Contribute: React.FC = () => {
           </Typography>
           <Box sx={{ borderRadius: 2, overflow: 'hidden', boxShadow: 2 }}>
             <iframe
+              title="Sponsor Form"
               src="https://docs.google.com/forms/d/e/1FAIpQLSfThOoGtbO4ltvp2bOnRIBv-Ivj4qt_MjZdB12cdPIfDdjrnQ/viewform?embedded=true"
               width="100%"
               height="500"
@@ -122,10 +122,8 @@ const Contribute: React.FC = () => {
         sx={{ px: { xs: '7.5vw', md: '7.5vw' }, boxSizing: 'border-box' }}
       >
         {bigNumbers.map((item, idx) => {
-          // Numbers to highlight in orange or blue
-          const orangeNumbers = ['1125+', '4300+'];
-          const blueNumbers = ['12+', '90+'];
-          const numberColor = orangeNumbers.includes(item.number) ? '#f24c02' : blueNumbers.includes(item.number) ? '#4083cc' : '#fff';
+          // Alternate between orange and blue colors
+          const numberColor = idx % 2 === 0 ? '#f24c02' : '#4083cc';
           return (
             <Card key={idx} sx={{ background: '#473024', color: '#fff', textAlign: 'center', py: { xs: 1, md: 3 }, boxShadow: 4, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
               <CardContent>

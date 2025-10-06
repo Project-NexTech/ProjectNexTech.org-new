@@ -56,7 +56,6 @@ import jpImg from '../img/team/jp_pierce.png';
 import paulImg from '../img/team/nt_leader.png';
 import tayyarImg from '../img/team/nt_leader.png';
 import jocelynImg from '../img/team/nt_leader.png';
-import srinivasImg from '../img/team/srinivas_hatathodi.png';
 import rimaImg from '../img/team/nt_leader.png';
 import jayatiImg from '../img/team/jayati_babla.png';
 import ntLeaderImg from '../img/team/nt_leader.png';
@@ -88,7 +87,6 @@ import tbd_5 from '../img/team/tbd_5.png';
 import shounakImg from '../img/team/shounak_ray_chaudhuri.png';
 import matthewImg from '../img/team/matthew_hsu.png';
 import peytonImg from '../img/team/peyton_slape.png';
-import shravyaImg from '../img/team/shravya_hatathodi.png';
 import mh_1 from '../img/team/mh_1.png';
 import mh_2 from '../img/team/mh_2.png';
 import mh_3 from '../img/team/mh_3.png';
@@ -99,16 +97,6 @@ import ps_2 from '../img/team/ps_2.png';
 import ps_3 from '../img/team/ps_3.png';
 import ps_4 from '../img/team/ps_4.png';
 import ps_5 from '../img/team/ps_5.png';
-import shh_1 from '../img/team/shh_1.png';
-import shh_2 from '../img/team/shh_2.png';
-import shh_3 from '../img/team/shh_3.png';
-import shh_4 from '../img/team/shh_4.png';
-import shh_5 from '../img/team/shh_5.png';
-import srh_1 from '../img/team/srh_1.png';
-import srh_2 from '../img/team/srh_2.png';
-import srh_3 from '../img/team/srh_3.png';
-import srh_4 from '../img/team/srh_4.png';
-import srh_5 from '../img/team/srh_5.png';
 import kk_1 from '../img/team/kk_1.png';
 import kk_2 from '../img/team/kk_2.png';
 import kk_3 from '../img/team/kk_3.png';
@@ -193,9 +181,9 @@ const execCommittee = [
     images: [peytonImg],
   },
   {
-    name: 'Shravya Hatathodi',
+    name: 'Mirabelle Egilmez',
     role: 'VP of Outreach',
-    images: [shravyaImg],
+    images: [mirabelleImg],
   },
 ];
 const curriculumManagers = [
@@ -210,8 +198,7 @@ const curriculumManagers = [
   { name: 'Daniel Eremin', images: [danielImg], role: 'Webmaster' },
 ];
 const outreachManagers = [
-  { name: 'Shravya Hatathodi', images: [shravyaImg], role: 'Marketing Manager' },
-  { name: 'Praem Kumar', images: [praemImg], role: 'Logistics Manager' },
+  { name: 'Open Position', images: [ntLeaderImg], role: 'Marketing Manager' },
   { name: 'Pryya Surarujiroj', images: [pryyaImg], role: 'Logistics Manager' },
   { name: 'Mirabelle Egilmez', images: [mirabelleImg], role: 'Policy/International Manager' },
 ];
@@ -221,7 +208,6 @@ const board = [
   { name: 'Paul Hsu', images: [paulImg], role: 'Board Member' },
   { name: 'Tayyar Egilmez', images: [tayyarImg], role: 'Board Member' },
   { name: 'Jocelyn Slape', images: [jocelynImg], role: 'Board Member' },
-  { name: 'Srinivas Hatathodi', images: [srinivasImg], role: 'Board Member' },
   { name: 'Rima Chatterjee', images: [rimaImg], role: 'Board Member' },
   { name: 'TBD', images: [ntLeaderImg], role: 'Board Member' },
 ];
@@ -265,8 +251,6 @@ const TeamGrid = ({ team }: { team: { name: string; role: string; images: string
   };
 
   // Default images generator
-
-
   const getImages = (member: any) => {
     switch (member.name) {
       case 'Shounak Ray Chaudhuri':
@@ -275,10 +259,6 @@ const TeamGrid = ({ team }: { team: { name: string; role: string; images: string
         return [mh_1, mh_2, mh_3, mh_4, mh_5];
       case 'Peyton Slape':
         return [ps_1, ps_2, ps_3, ps_4, ps_5];
-      case 'Shravya Hatathodi':
-        return [shh_1, shh_2, shh_3, shh_4, shh_5];
-      case 'Srinivas Hatathodi':
-        return [srh_1, srh_2, srh_3, srh_4, srh_5];
       case 'Kush Kharia':
         return [kk_1, kk_2, kk_3, kk_4, kk_5];
       case 'Forest Liang':

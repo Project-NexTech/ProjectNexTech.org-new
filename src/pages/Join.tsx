@@ -24,26 +24,26 @@ const Join: React.FC = () => (
     <Box display="grid" gridTemplateColumns={{ xs: '1fr', md: '1fr 1fr 1fr' }} gap={4} mb={6}>
       <Box textAlign="center">
         <Typography variant="h5" fontWeight={700} fontFamily="Inter, Arial, sans-serif" mb={1} align="center">
-          Why Join?
+          {joinTopColumns[0].title}
         </Typography>
         <Typography color="text.secondary" align="center">
-          Be part of a global movement to make STEM education accessible. Connect, learn, and grow with us.
+         {joinTopColumns[0].body}
         </Typography>
       </Box>
       <Box textAlign="center">
         <Typography variant="h5" fontWeight={700} fontFamily="Inter, Arial, sans-serif" mb={1} align="center">
-          Ways to Get Involved
+          {joinTopColumns[1].title}
         </Typography>
         <Typography color="text.secondary" align="center">
-          Join our Discord, volunteer, or enroll in our programs. There are many ways to contribute and benefit.
+          {joinTopColumns[1].body}
         </Typography>
       </Box>
       <Box textAlign="center">
         <Typography variant="h5" fontWeight={700} fontFamily="Inter, Arial, sans-serif" mb={1} align="center">
-          Who Can Join?
+          {joinTopColumns[2].title}
         </Typography>
         <Typography color="text.secondary" align="center">
-          Students, educators, and professionals from all backgrounds are welcome. Everyone can make an impact.
+          {joinTopColumns[2].body}
         </Typography>
       </Box>
     </Box>
@@ -61,6 +61,7 @@ const Join: React.FC = () => (
   <Box display="flex" flexDirection="row" alignItems="center" justifyContent="space-between" sx={{ flexWrap: { xs: 'wrap', md: 'nowrap' } }}>
           <Box flex={1} display="flex" justifyContent="flex-start" alignItems="center" sx={{ minWidth: 0 }}>
             <iframe
+              title="Discord widget"
               src="https://discord.com/widget?id=750366801430577263&theme=dark"
               allowTransparency={true}
               frameBorder="0"
@@ -110,6 +111,7 @@ const Join: React.FC = () => (
       </Typography>
       <Box display="flex" justifyContent="center">
         <iframe
+          title="Slideshow embed"
           src="https://docs.google.com/presentation/d/e/2PACX-1vTNAnLNnWuJEpG7wYFiesXMxCOJVwZif0NisDPDbbVt-F-d1K_M0h-pbH86B9Alf7JSZNKnlJjgwgML/pubembed?start=false&loop=false&delayms=3000"
           frameBorder="0"
           width="1055"
