@@ -152,6 +152,7 @@ import React, { useState } from 'react';
 import { Box, Typography } from '@mui/material';
 import TeamMemberDialog from '../components/TeamMemberDialog.tsx';
 import { Carousel } from 'react-responsive-carousel';
+import { Helmet } from 'react-helmet';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const makeTeam = (count: number, title: string) =>
@@ -194,7 +195,7 @@ const curriculumManagers = [
   { name: 'Julian Garcia', images: [julianImg], role: 'Programming Manager' },
   { name: 'Colin Thompson', images: [colinImg], role: 'Physics/Math Manager' },
   { name: 'Peyton Slape', images: [peytonImg], role: 'Natural Sciences Manager' },
-  { name: 'Jayati Babla', images: [jayatiImg], role: 'Natural Sciences Manager'},
+  { name: 'Jayati Babla', images: [jayatiImg], role: 'Natural Sciences Manager' },
   { name: 'Daniel Eremin', images: [danielImg], role: 'Webmaster' },
 ];
 const outreachManagers = [
@@ -323,6 +324,9 @@ const TeamGrid = ({ team }: { team: { name: string; role: string; images: string
 
   return (
     <>
+      <Helmet>
+
+      </Helmet>
       <Box
         mb={4}
         sx={{
@@ -434,30 +438,30 @@ const BoardGrid = ({ team }: { team: { name: string; role: string; images: strin
       display: 'grid',
       gridTemplateColumns: 'repeat(4, minmax(0, 1fr))',
       gap: { xs: 2, md: 4 },
-  '@media (max-width:1600px)': { gridTemplateColumns: 'repeat(3, minmax(0, 1fr))' },
-  '@media (max-width:1200px)': { gridTemplateColumns: 'repeat(2, minmax(0, 1fr))' },
+      '@media (max-width:1600px)': { gridTemplateColumns: 'repeat(3, minmax(0, 1fr))' },
+      '@media (max-width:1200px)': { gridTemplateColumns: 'repeat(2, minmax(0, 1fr))' },
       '@media (max-width:800px)': { gridTemplateColumns: '1fr' },
     }}
   >
     {team.map((member, idx) => (
-  <Box key={idx} bgcolor="#303947" color="#fff" borderRadius={2} p={0} display="flex" flexDirection="row" alignItems="center" minHeight="150px">
-    <Box display="flex" flexDirection="column" justifyContent="center" height="100%" pl={0} pr={0} py={2}>
-      <img
-        src={member.images[0]}
-        alt={member.name}
-        style={{
-          borderRadius: 12,
-          height: '100%',
-          width: '175px',
-          objectFit: 'contain',
-          display: 'block',
-          maxWidth: '100%',
-        }}
-        srcSet={`${member.images[0]} 175w`}
-        sizes="(max-width: 1200px) 150px, 175px"
-      />
-    </Box>
-  <Box flex={1} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="center" pl={0} pr={2} py={2}>
+      <Box key={idx} bgcolor="#303947" color="#fff" borderRadius={2} p={0} display="flex" flexDirection="row" alignItems="center" minHeight="150px">
+        <Box display="flex" flexDirection="column" justifyContent="center" height="100%" pl={0} pr={0} py={2}>
+          <img
+            src={member.images[0]}
+            alt={member.name}
+            style={{
+              borderRadius: 12,
+              height: '100%',
+              width: '175px',
+              objectFit: 'contain',
+              display: 'block',
+              maxWidth: '100%',
+            }}
+            srcSet={`${member.images[0]} 175w`}
+            sizes="(max-width: 1200px) 150px, 175px"
+          />
+        </Box>
+        <Box flex={1} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="center" pl={0} pr={2} py={2}>
           <Typography variant="h6" fontWeight={700} fontFamily="Inter, Arial, sans-serif" mb={0.5}>
             {member.name}
           </Typography>
@@ -484,55 +488,61 @@ const BoardGrid = ({ team }: { team: { name: string; role: string; images: strin
 );
 
 const Team: React.FC = () => (
-  <Box px={{ xs: 2, md: 6 }} py={6}>
-    {/* Executive Committee */}
-    <Typography variant="h4" fontWeight={700} mb={2} fontFamily="Inter, Arial, sans-serif" align="center">
-      Active Executive Committee
-    </Typography>
-    <TeamGrid team={execCommittee} />
+  <>
+    <Helmet>
+      <title>Team | Project NexTech</title>
+      <meta name="description" content="Meet some of the talented people leading Project NexTech!" />
+    </Helmet>
+    <Box px={{ xs: 2, md: 6 }} py={6}>
+      {/* Executive Committee */}
+      <Typography variant="h4" fontWeight={700} mb={2} fontFamily="Inter, Arial, sans-serif" align="center">
+        Active Executive Committee
+      </Typography>
+      <TeamGrid team={execCommittee} />
 
-    {/* Curriculum Managers */}
-  <Typography variant="h4" fontWeight={700} mb={2} fontFamily="Inter, Arial, sans-serif" align="center">
-      Curriculum Managers
-    </Typography>
-    <TeamGrid team={curriculumManagers} />
+      {/* Curriculum Managers */}
+      <Typography variant="h4" fontWeight={700} mb={2} fontFamily="Inter, Arial, sans-serif" align="center">
+        Curriculum Managers
+      </Typography>
+      <TeamGrid team={curriculumManagers} />
 
-    {/* Outreach Managers */}
-    <Typography variant="h4" fontWeight={700} mb={2} fontFamily="Inter, Arial, sans-serif" align="center">
-      Outreach Managers
-    </Typography>
-    <TeamGrid team={outreachManagers} />
+      {/* Outreach Managers */}
+      <Typography variant="h4" fontWeight={700} mb={2} fontFamily="Inter, Arial, sans-serif" align="center">
+        Outreach Managers
+      </Typography>
+      <TeamGrid team={outreachManagers} />
 
-    {/* Board of Directors */}
-    <Typography variant="h4" fontWeight={700} mb={2} fontFamily="Inter, Arial, sans-serif" align="center">
-      Board of Directors
-    </Typography>
-  <TeamGrid team={board} />
+      {/* Board of Directors */}
+      <Typography variant="h4" fontWeight={700} mb={2} fontFamily="Inter, Arial, sans-serif" align="center">
+        Board of Directors
+      </Typography>
+      <TeamGrid team={board} />
 
-    {/* Division Leads */}
-    <Typography variant="h4" fontWeight={700} mb={2} fontFamily="Inter, Arial, sans-serif" align="center">
-      Division Leads
-    </Typography>
-    <TeamGrid team={divisionLeads} />
+      {/* Division Leads */}
+      <Typography variant="h4" fontWeight={700} mb={2} fontFamily="Inter, Arial, sans-serif" align="center">
+        Division Leads
+      </Typography>
+      <TeamGrid team={divisionLeads} />
 
-    {/* Organizational Structure Section Header */}
-  <Typography variant="h4" fontWeight={700} mb={4} fontFamily="Inter, Arial, sans-serif" align="center">
-      Organizational Structure
-    </Typography>
-    {/* Three Column Section Like About Top, No Cards */}
-    <Box display="grid" gridTemplateColumns={{ xs: '1fr', md: '1fr 1fr 1fr' }} gap={4} mb={6}>
-      {leadershipStructure.map((item, idx) => (
-        <Box key={idx} p={4} minHeight={180} display="flex" flexDirection="column" justifyContent="center" bgcolor="transparent" textAlign="center">
-          <Typography variant="h5" fontWeight={700} fontFamily="Inter, Arial, sans-serif" mb={1} align="center">
-            {item.title}
-          </Typography>
-          <Typography color="text.secondary" fontFamily="Inter, Arial, sans-serif" align="center">
-            {item.description}
-          </Typography>
-        </Box>
-      ))}
+      {/* Organizational Structure Section Header */}
+      <Typography variant="h4" fontWeight={700} mb={4} fontFamily="Inter, Arial, sans-serif" align="center">
+        Organizational Structure
+      </Typography>
+      {/* Three Column Section Like About Top, No Cards */}
+      <Box display="grid" gridTemplateColumns={{ xs: '1fr', md: '1fr 1fr 1fr' }} gap={4} mb={6}>
+        {leadershipStructure.map((item, idx) => (
+          <Box key={idx} p={4} minHeight={180} display="flex" flexDirection="column" justifyContent="center" bgcolor="transparent" textAlign="center">
+            <Typography variant="h5" fontWeight={700} fontFamily="Inter, Arial, sans-serif" mb={1} align="center">
+              {item.title}
+            </Typography>
+            <Typography color="text.secondary" fontFamily="Inter, Arial, sans-serif" align="center">
+              {item.description}
+            </Typography>
+          </Box>
+        ))}
+      </Box>
     </Box>
-  </Box>
+  </>
 );
 
 export default Team;
