@@ -303,7 +303,7 @@ const Programs: React.FC = () => {
             • Grades 6-12 OK, grades 7-10 ideal (US/Canada){"\n"}
             • Ages 12-18 (International){"\n"}
             • FTC Robot kits, project boards, computers, and a workspace{"\n"}
-            • This course is designed for students and parents to be able to learn the basics of F.I.R.S.T. Tech Challenge to start a robotics team and prepare for competition, supported by volunteer coaches who have past participation or judging experience in FTC. This course is being co-developed with FTC Team 20613, Metal Maniacs.
+            • This course is designed for students and parents to be able to learn the basics of F.I.R.S.T. Tech Challenge to start a robotics team and prepare for competition, supported by volunteer coaches who have past participation or judging experience in FTC. This course is being co-developed with FTC Team 22105, Runtime Terror.
           </Typography>
         </Box>
   <Box bgcolor="#473024" color="#fff" borderRadius={2} p={2} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="flex-start" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' } }}>
