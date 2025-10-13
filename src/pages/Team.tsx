@@ -58,6 +58,7 @@ import tayyarImg from '../img/team/nt_leader.png';
 import jocelynImg from '../img/team/nt_leader.png';
 import rimaImg from '../img/team/nt_leader.png';
 import jayatiImg from '../img/team/jayati_babla.png';
+import aanyaImg from '../img/team/aanya_babla.png';
 import ntLeaderImg from '../img/team/nt_leader.png';
 import ph_1 from '../img/team/ph_1.png';
 import ph_2 from '../img/team/ph_2.png';
@@ -132,6 +133,11 @@ import jb_2 from '../img/team/jb_2.png';
 import jb_3 from '../img/team/jb_3.png';
 import jb_4 from '../img/team/jb_4.png';
 import jb_5 from '../img/team/jb_5.png';
+import ab_1 from '../img/team/ab_1.png';
+import ab_2 from '../img/team/ab_2.png';
+import ab_3 from '../img/team/ab_3.png';
+import ab_4 from '../img/team/ab_4.png';
+import ab_5 from '../img/team/ab_5.png';
 
 import me_1 from '../img/team/me_1.png';
 import me_2 from '../img/team/me_2.png';
@@ -199,7 +205,7 @@ const curriculumManagers = [
   { name: 'Daniel Eremin', images: [danielImg], role: 'Webmaster' },
 ];
 const outreachManagers = [
-  { name: 'Open Position', images: [ntLeaderImg], role: 'Marketing Manager' },
+  { name: 'Aanya Babla', images: [aanyaImg], role: 'Marketing Manager' },
   { name: 'Pryya Surarujiroj', images: [pryyaImg], role: 'Logistics Manager' },
   { name: 'Mirabelle Egilmez', images: [mirabelleImg], role: 'Policy/International Manager' },
 ];
