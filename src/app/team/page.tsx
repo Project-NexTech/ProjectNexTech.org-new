@@ -1,5 +1,6 @@
 'use client';
-import Image from 'next/image';
+/* eslint-disable @typescript-eslint/no-unused-vars */
+// import Image from 'next/image';
 
 // Image paths as constants - Next.js serves files from public directory
 const src_1 = '/img/team/src_1.png';
@@ -247,12 +248,18 @@ const leadershipStructure = [
   }
 ];
 
-const TeamGrid = ({ team }: { team: { name: string; role: string; images: string[] }[] }) => {
+interface TeamMember {
+  name: string;
+  role: string;
+  images: string[];
+}
+
+const TeamGrid = ({ team }: { team: TeamMember[] }) => {
   const [dialogOpen, setDialogOpen] = useState(false);
   const [dialogMember, setDialogMember] = useState<{ name: string; images: string[]; description: string } | null>(null);
 
   // Default description generator
-  const getDescription = (member: any) => {
+  const getDescription = (member: TeamMember) => {
     if (member.name === 'Shounak Ray Chaudhuri') {
       return `Shounak Ray Chaudhuri is the President of Project NexTech. He leads the organization in its mission to inspire and support a global community of students through interactive, accessible, and high-quality STEM education. Shounak has a passion for technology, education, and community building.\n\nAchievements:\n- Founded Project NexTech\n- Led curriculum development for multiple STEM programs\n- Organized outreach events impacting hundreds of students\n\nInterests: AI, Robotics, Physics, Mentoring.`;
     }
@@ -261,7 +268,7 @@ const TeamGrid = ({ team }: { team: { name: string; role: string; images: string
   };
 
   // Default images generator
-  const getImages = (member: any) => {
+  const getImages = (member: TeamMember) => {
     switch (member.name) {
       case 'Shounak Ray Chaudhuri':
         return [src_1, src_2, src_3, src_4, src_5];
@@ -322,7 +329,7 @@ const TeamGrid = ({ team }: { team: { name: string; role: string; images: string
     }
   };
 
-  const handleLearnMore = (member: any) => {
+  const handleLearnMore = (member: TeamMember) => {
     setDialogMember({
       name: member.name,
       images: getImages(member),
@@ -437,7 +444,7 @@ const TeamGrid = ({ team }: { team: { name: string; role: string; images: string
   );
 };
 
-const BoardGrid = ({ team }: { team: { name: string; role: string; images: string[] }[] }) => (
+const BoardGrid = ({ team }: { team: TeamMember[] }) => (
   <Box
     mb={4}
     sx={{
