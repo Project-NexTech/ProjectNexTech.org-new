@@ -1,0 +1,165 @@
+'use client';
+
+import React from 'react';
+import { Box, Typography } from '@mui/material';
+import Image from 'next/image';
+import { bigNumbers } from '../../data/bigNumbers';
+
+const partners = [
+  { name: 'City of San Diego', logo: '/img/partners/city_of_san_diego.png', subtitle: 'We have a Right of Entry contract with the City of San Diego, which allows us to easily run programs at all San Diego Branch Library locations. In exchange for this permission, we provide free STEM programs for library patrons and community members.', url: 'https://www.sandiego.gov/' },
+  { name: 'International Research Olympiad (IRO)', logo: '/img/partners/iro.png', subtitle: 'We are an IRO partner, so all Project NexTech school clubs are IRO-affiliated, and some of our Research curriculum was developed by the IRO. Our mission aligns with their mission of promoting STEM and research across the world.', url: 'https://www.internationalresearcholympiad.org/' },
+  { name: 'Greater San Diego Science and Engineering Fair (GSDSEF)', logo: '/img/partners/gsdsef.png', subtitle: 'We co-host the GSDSEF\'s annual bootcamps for students wanting to participate in the Fair across San Diego. We provide insurance coverage, locations, and students for the events. We also co-developed our [2.3] Intro to Science Fair course with the GSDSEF Student Leadership Board.', url: 'https://www.gsdsef.org/' },
+  { name: 'Francis Parker School', logo: '/img/partners/fps.png', subtitle: 'The eight founding members of Project NexTech were from Francis Parker School. We have a Facilities Use Agreement with the School to be able to host programs on campus for the Linda Vista and wider San Diego community. Our goals align with their mission to promote academic excellence.', url: 'https://www.francisparker.org/' },
+  { name: 'Qualcomm', logo: '/img/partners/q.png', subtitle: 'We have received over $4000 in funding from Qualcomm through their grant programs. We also host programs at the Qualcomm campus in San Diego for the Sorrento Valley and wider San Diego community.', url: 'https://www.qualcomm.com/' },
+  { name: 'Google', logo: '/img/partners/g.png', subtitle: 'We have a Google for Nonprofits plan, which allows us to use Google Workspace for our work. Free access to this software has been crucial for our Google Drive, Gmail, Google accounts, and many of the embeds powering this website.', url: 'https://www.google.org/' },
+];
+
+const galleryImages = [
+  '/img/gallery_1.png',
+  '/img/gallery_2.png',
+  '/img/gallery_3.png',
+  '/img/gallery_4.png',
+  '/img/gallery_5.png',
+  '/img/gallery_6.png',
+  '/img/gallery_7.png',
+  '/img/gallery_8.png',
+];
+
+export default function About() {
+  return (
+    <Box px={{ xs: 2, md: 6 }} py={6}>
+      {/* Three-column intro */}
+      <Box display="grid" gridTemplateColumns={{ xs: '1fr', md: '1fr 1fr 1fr' }} gap={4} mb={6}>
+        <Box textAlign="center">
+          <Typography variant="h5" fontWeight={700} fontFamily="Inter, Arial, sans-serif" mb={1} align="center">
+            What is Project NexTech?
+          </Typography>
+          <Typography color="text.secondary" align="center">
+            We are a student-led international nonprofit organization teaching custom science, technology, engineering, and math (STEM) curricula to students at schools, libraries, and community centers worldwide.
+          </Typography>
+        </Box>
+        <Box textAlign="center">
+          <Typography variant="h5" fontWeight={700} fontFamily="Inter, Arial, sans-serif" mb={1} align="center">
+            Why does our work matter?
+          </Typography>
+          <Typography color="text.secondary" align="center">
+            We connect those with a passion for STEM and the resources to help others with the students who need their help the most. We work year-round, across the globe, for all ages of students.
+          </Typography>
+        </Box>
+        <Box textAlign="center">
+          <Typography variant="h5" fontWeight={700} fontFamily="Inter, Arial, sans-serif" mb={1} align="center">
+            Our founding
+          </Typography>
+          <Typography color="text.secondary" align="center">
+            Project NexTech began on May 19th, 2023 as a group of 8 students in San Diego, CA. Its first class had 4 instructors and 2 students. Students voted to teach STEM workshops for people beyond school.
+          </Typography>
+        </Box>
+      </Box>
+
+      {/* Mission & Vision */}
+      <Box display="grid" gridTemplateColumns={{ xs: '1fr', md: '1fr 1fr' }} gap={4} mb={6}>
+        <Box bgcolor="#473024" color="#fff" borderRadius={2} p={4} border="3px solid #f24c02">
+          <Typography variant="h4" fontWeight={700} fontFamily="Inter, Arial, sans-serif" mb={1} align="center">
+            Our Mission
+          </Typography>
+          <Typography>
+            To inspire and support a global community of students through interactive, accessible, and high-quality STEM education, equipping them with a passion to combat real-world problems.
+          </Typography>
+        </Box>
+        <Box bgcolor="#303947" color="#fff" borderRadius={2} p={4} border="3px solid #4083cc">
+          <Typography variant="h4" fontWeight={700} fontFamily="Inter, Arial, sans-serif" mb={1} align="center">
+            Our Vision
+          </Typography>
+          <Typography>
+            A world where students with opportunity can volunteer easily, students in need can easily access many types of STEM education, and Project NexTech is an international hub for STEM education.
+          </Typography>
+        </Box>
+      </Box>
+
+      {/* Image Gallery Section: Programs Gallery */}
+      <Box mb={6}>
+        <Box
+          display="grid"
+          gridTemplateColumns={{ xs: '1fr 1fr', sm: '1fr 1fr', md: '1fr 1fr 1fr 1fr' }}
+          gridTemplateRows={{ xs: '1fr 1fr', sm: '1fr 1fr', md: '1fr 1fr' }}
+          gap={3}
+        >
+          {galleryImages.map((img, idx) => (
+            <Box key={idx} position="relative" width="100%" sx={{ aspectRatio: '16/9' }}>
+              <Image src={img} alt={`Program ${idx + 1}`} fill quality={100} unoptimized style={{ borderRadius: 12, objectFit: 'cover' }} sizes="(max-width: 768px) 45vw, (max-width: 1200px) 22vw, 250px" />
+            </Box>
+          ))}
+        </Box>
+      </Box>
+      {/* Big Numbers Grid 4x2 */}
+      <Box mb={6}>
+        <Box display="grid" gridTemplateColumns={{ xs: '1fr 1fr', md: '1fr 1fr 1fr 1fr' }} gridTemplateRows={{ xs: '1fr 1fr 1fr 1fr', md: '1fr 1fr' }} gap={4}>
+          {bigNumbers.map((item, idx) => {
+            // Calculate row and adjust color pattern
+            const row = Math.floor(idx / 4);
+            // For first row: orange-blue-orange-blue
+            // For second row: blue-orange-blue-orange
+            const numberColor = row === 0 ?
+              (idx % 2 === 0 ? '#f24c02' : '#4083cc') :
+              (idx % 2 === 0 ? '#4083cc' : '#f24c02');
+            return (
+              <Box key={idx} bgcolor="#473024" color="#fff" borderRadius={2} textAlign="center" py={5} px={2} display="flex" flexDirection="column" alignItems="center" justifyContent="center">
+                <Typography variant="h3" fontWeight={700} color={numberColor} fontFamily="Inter, Arial, sans-serif">
+                  {item.number}
+                </Typography>
+                <Typography color="#b0b0b0" fontFamily="Inter, Arial, sans-serif">
+                  {item.label}
+                </Typography>
+              </Box>
+            );
+          })}
+        </Box>
+      </Box>
+
+      {/* Google MyMap Embed */}
+      <Box mb={6} textAlign="center">
+        <Typography variant="h4" fontWeight={700} mb={2} fontFamily="Inter, Arial, sans-serif" align="center">
+          Our Impact Map
+        </Typography>
+        <Box width="100%">
+          <iframe
+            title="Google MyMap"
+            src="https://www.google.com/maps/d/u/0/embed?mid=1cfW8EF2DcCvJ3TkhxMR73vx3O3sCFfA&ehbc=2E312F"
+            width="100%"
+            height="640"
+            style={{ border: 0, width: '100%' }}
+            allowFullScreen
+            loading="lazy"
+          ></iframe>
+        </Box>
+      </Box>
+
+      {/* Partners Showcase 3x2 */}
+      <Box>
+        <Typography variant="h4" fontWeight={700} mb={2} fontFamily="Inter, Arial, sans-serif" align="center">
+          Our Partners
+        </Typography>
+        <Box display="grid" gridTemplateColumns={{ xs: '1fr', sm: '1fr 1fr', md: '1fr 1fr 1fr' }} gap={4}>
+          {partners.map((partner, idx) => (
+            <Box key={idx} bgcolor="#303947" color="#fff" borderRadius={2} textAlign="center" py={4} px={2} display="flex" flexDirection="column" alignItems="center" justifyContent="center">
+              <a href={partner.url} target="_blank" rel="noopener noreferrer" style={{ display: 'block', marginBottom: 8 }}>
+                <Box position="relative" width={120} height={60} mx="auto">
+                  <Image src={partner.logo} alt={partner.name} fill unoptimized style={{ objectFit: 'contain', cursor: 'pointer' }} sizes="120px" />
+                </Box>
+              </a>
+              <Box display="flex" alignItems="center" justifyContent="center" mb={1}>
+                <Typography fontFamily="Inter, Arial, sans-serif" fontWeight={700}>
+                  {partner.name}
+                </Typography>
+                <a href={partner.url} target="_blank" rel="noopener noreferrer" style={{ marginLeft: 8, color: '#fff', display: 'inline-flex', alignItems: 'center' }}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" /></svg>
+                </a>
+              </Box>
+              <Typography fontFamily="Inter, Arial, sans-serif" color="#b0b0b0">{partner.subtitle}</Typography>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+    </Box>
+  );
+}
