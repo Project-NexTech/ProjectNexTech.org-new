@@ -1,12 +1,8 @@
-'use client';
-
 import React from 'react';
 import { Box, Typography, Button, Card, CardContent } from '@mui/material';
-import { Carousel } from 'react-responsive-carousel';
 import Link from 'next/link';
-import Image from 'next/image';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { bigNumbers as globalBigNumbers } from '../data/bigNumbers';
+import HomeCarousel from '../components/HomeCarousel';
 
 const carouselImages = [
   '/img/carousel_1.png',
@@ -112,43 +108,15 @@ export default function Home() {
           minWidth={0}
           sx={{ width: '100%' }}
         >
-          <Box sx={{ width: '100%', maxWidth: `calc(100vw - 2 * 7.5vw - 7.5vw - 400px)`, aspectRatio: '16/9', maxHeight: '80vh' }}>
-            <Carousel
-              autoPlay
-              infiniteLoop
-              showThumbs={false}
-              showStatus={false}
-              interval={4000}
-              width="100%"
-              dynamicHeight={false}
-            >
-              {carouselImages.map((img, idx) => (
-                <div key={idx} style={{ width: '100%', aspectRatio: '16/9', position: 'relative' }}>
-                  <Image src={img} alt={`STEM Carousel ${idx + 1}`} fill unoptimized style={{ borderRadius: 16, objectFit: 'cover' }} sizes="(max-width: 1200px) 85vw, 50vw" />
-                </div>
-              ))}
-            </Carousel>
+          <Box sx={{ width: '100%', maxWidth: `calc(100vw - 2 * 7.5vw - 7.5vw - 400px)` }}>
+            <HomeCarousel images={carouselImages} />
           </Box>
         </Box>
       </Box>
       {/* Carousel for mobile and 900px-1200px view (below buttons) */}
       <Box display={{ xs: 'block', md: 'block', lg: 'none' }} width="100%" sx={{ px: '7.5vw', mt: { xs: 0, sm: 0, md: 0, lg: 0.5, xl: 0.5 }, mb: { xs: 3, sm: 3, md: 3, lg: 2.5, xl: 2.5 } }}>
         <Box sx={{ width: '100%', aspectRatio: '16/9', maxHeight: '60vw', maxWidth: 600, mx: 'auto' }}>
-          <Carousel
-            autoPlay
-            infiniteLoop
-            showThumbs={false}
-            showStatus={false}
-            interval={4000}
-            width="100%"
-            dynamicHeight={false}
-          >
-            {carouselImages.map((img, idx) => (
-              <div key={idx} style={{ width: '100%', aspectRatio: '16/9', position: 'relative' }}>
-                <Image src={img} alt={`STEM Carousel ${idx + 1}`} fill unoptimized style={{ borderRadius: 16, objectFit: 'cover' }} sizes="(max-width: 768px) 85vw, 600px" />
-              </div>
-            ))}
-          </Carousel>
+          <HomeCarousel images={carouselImages} />
         </Box>
       </Box>
       {/* Big Numbers Section as responsive grid */}

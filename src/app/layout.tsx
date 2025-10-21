@@ -2,10 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from 'next/font/google';
 import "./globals.css";
 import ThemeRegistry from './ThemeRegistry';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import AnnouncementBar from '../components/AnnouncementBar';
-import { Box } from '@mui/material';
+import LayoutContent from './LayoutContent';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -23,17 +20,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.className}>
-      <body>
+    <html lang="en" className={inter.className} suppressHydrationWarning>
+      <body suppressHydrationWarning>
         <ThemeRegistry>
-          <Box display="flex" flexDirection="column" minHeight="100vh">
-            <AnnouncementBar />
-            <Navbar />
-            <Box component="main" flex={1} maxWidth={1800} mx="auto" width="100%">
-              {children}
-            </Box>
-            <Footer />
-          </Box>
+          <LayoutContent>
+            {children}
+          </LayoutContent>
         </ThemeRegistry>
       </body>
     </html>

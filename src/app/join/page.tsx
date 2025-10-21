@@ -1,6 +1,3 @@
-'use client';
-// import Image from 'next/image';
-
 import React from 'react';
 // Image paths as constants - Next.js serves files from public directory
 const discordImg = '/img/discord.png';

@@ -1,20 +1,18 @@
-'use client';
-
 import React from 'react';
 import { Box, Typography, Link as MuiLink } from '@mui/material';
 import Link from 'next/link';
 import Image from 'next/image';
-import Head from 'next/head';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Page Not Found | Project NexTech',
+  description: 'The page you are looking for could not be found.',
+  robots: 'noindex',
+};
 
 export default function NotFound() {
   return (
-    <>
-      <Head>
-        <title>Page Not Found | Project NexTech</title>
-        <meta name="description" content="The page you are looking for could not be found." />
-        <meta name="robots" content="noindex" />
-      </Head>
-      <Box
+    <Box
       display="flex"
       flexDirection={{ xs: 'column', md: 'row' }}
       alignItems="center"
@@ -62,6 +60,5 @@ export default function NotFound() {
         />
       </Box>
     </Box>
-    </>
   );
 }

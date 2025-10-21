@@ -1,9 +1,7 @@
-'use client';
-// import Image from 'next/image';
-
 import React from 'react';
 import { Box, Typography, Card, CardContent } from '@mui/material';
 import { bigNumbers as globalBigNumbers } from '../../data/bigNumbers.ts';
+import DonorboxEmbed from '../../components/DonorboxEmbed';
 
 const contributeTopColumns = [
   {
@@ -30,17 +28,6 @@ const bigNumbers = [
 ];
 
 const Contribute: React.FC = () => {
-  React.useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://donorbox.org/widget.js';
-    script.async = true;
-    script.setAttribute('paypalExpress', 'false');
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   return (
       <Box px={{ xs: 2, md: 6 }} py={6} sx={{ width: '100%', boxSizing: 'border-box' }}>
         {/* Three-column intro section */}
@@ -56,20 +43,7 @@ const Contribute: React.FC = () => {
         {/* Orange box payment portal section - 1 column orange, 2 columns text */}
         <Box display="grid" gridTemplateColumns={{ xs: '1fr', md: '1fr 1fr 1fr' }} gap={4} mb={6} sx={{ width: '100%', boxSizing: 'border-box' }}>
           <Box bgcolor="#473024" color="#fff" borderRadius={2} p={4} border="3px solid #f24c02" display="flex" flexDirection="column" alignItems="center" justifyContent="center" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' }, maxWidth: { xs: '100vw' }, overflowX: 'auto' }}>
-            <Box sx={{ display: 'flex', borderRadius: 2, overflow: 'hidden', boxShadow: 2, width: '100%' }}>
-              <iframe
-                title="Donorbox"
-                src="https://donorbox.org/embed/donate-to-project-nextech?default_interval=m&designation=General+donation+that+our+student+leaders+may+allocate+as+needed&amount=100"
-                name="donorbox"
-                seamless
-                frameBorder="0"
-                scrolling="no"
-                height="900px"
-                width="100%"
-                style={{ maxWidth: 500, minWidth: 250, maxHeight: 'none', border: 'none', borderRadius: 8, marginLeft: 'auto', marginRight: 'auto', filter: 'invert(85%) hue-rotate(180.0deg)' }}
-                allow="payment"
-              ></iframe>
-            </Box>
+            <DonorboxEmbed />
           </Box>
           <Box
             display="grid"

@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { Box, Typography, Link, IconButton } from '@mui/material';
 import EmailIcon from '@mui/icons-material/Email';
