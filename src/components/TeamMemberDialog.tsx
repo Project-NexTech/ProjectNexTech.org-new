@@ -23,13 +23,20 @@ const TeamMemberDialog: React.FC<TeamMemberDialogProps> = ({ open, onClose, name
         <CloseIcon />
       </IconButton>
     </DialogTitle>
-  <DialogContent sx={{ minHeight: { xs: 600, sm: 800, md: 1000 }, maxHeight: { xs: 900, sm: 1200, md: 1400 }, overflowY: 'auto' }}>
-      <Box mb={3}>
+  <DialogContent sx={{ minHeight: { xs: 400, sm: 800, md: 1000 }, maxHeight: { xs: 900, sm: 1200, md: 1400 }, overflowY: 'auto', pt: { xs: 1, md: 2 }, pb: { xs: 2, md: 3 } }}>
+      <Box mb={{ xs: 0.5, md: 3 }}>
         <Carousel showThumbs={false} showStatus={false} infiniteLoop dynamicHeight={false}>
           {images.map((img, idx) => (
-            <div key={idx} style={{ position: 'relative', height: 600, width: '100%' }}>
+            <Box 
+              key={idx} 
+              sx={{ 
+                position: 'relative', 
+                height: { xs: 300, sm: 400, md: 600 }, 
+                width: '100%' 
+              }}
+            >
               <Image src={img} alt={`${name} ${idx + 1}`} fill style={{ objectFit: 'contain' }} sizes="(max-width: 768px) 90vw, 800px" />
-            </div>
+            </Box>
           ))}
         </Carousel>
       </Box>

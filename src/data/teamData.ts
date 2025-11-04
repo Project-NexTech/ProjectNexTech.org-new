@@ -45,5 +45,8 @@ export const getTeamDescription = (member: TeamMember): string => {
   if (member.name === 'Shounak Ray Chaudhuri') {
     return `Shounak Ray Chaudhuri is the President of Project NexTech. He leads the organization in its mission to inspire and support a global community of students through interactive, accessible, and high-quality STEM education. Shounak has a passion for technology, education, and community building.\n\nAchievements:\n- Founded Project NexTech\n- Led curriculum development for multiple STEM programs\n- Organized outreach events impacting hundreds of students\n\nInterests: AI, Robotics, Physics, Mentoring.`;
   }
+  else if(member.name === 'Daniel Eremin') {
+    return `Daniel Eremin is the webmaster of Project NexTech. He manages the website and Discord server. He is passionate about technology and education.\nInterests: Programming - Java (mainly FRC), JavaScript, C++, Python, AI`;
+  }
   return `${member.name} serves as ${member.role} at Project NexTech. More information about their background and contributions will be added soon.`;
 };

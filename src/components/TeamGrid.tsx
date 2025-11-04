@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { Box, Typography } from '@mui/material';
 import TeamMemberDialog from './TeamMemberDialog';
-import { getTeamImages, getTeamDescription } from '../lib/teamData';
+import { getTeamImages, getTeamDescription } from '../data/teamData';
 
 interface TeamMember {
   name: string;
@@ -31,11 +31,11 @@ export const TeamGrid: React.FC<TeamGridProps> = ({ team }) => {
   return (
     <>
       <Box
-        mb={4}
+        mb={{ xs: 1, md: 4 }}
         sx={{
           display: 'grid',
           gridTemplateColumns: 'repeat(4, minmax(0, 1fr))',
-          gap: { xs: 2, md: 4 },
+          gap: { xs: 1, md: 4 },
           '@media (max-width:1600px)': { gridTemplateColumns: 'repeat(3, minmax(0, 1fr))' },
           '@media (max-width:1200px)': { gridTemplateColumns: 'repeat(2, minmax(0, 1fr))' },
           '@media (max-width:800px)': { gridTemplateColumns: '1fr' },

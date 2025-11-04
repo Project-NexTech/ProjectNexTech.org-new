@@ -18,13 +18,13 @@ const curriculumManagers = [
   { name: 'Julian Garcia', images: ['/img/team/julian_garcia.png'], role: 'Programming Manager' },
   { name: 'Colin Thompson', images: ['/img/team/colin_thompson.png'], role: 'Physics/Math Manager' },
   { name: 'Jayati Babla', images: ['/img/team/jayati_babla.png'], role: 'Natural Sciences Manager' },
-  { name: 'Daniel Eremin', images: ['/img/team/daniel_eremin.png'], role: 'Webmaster' },
 ];
 
 const outreachManagers = [
   { name: 'Aanya Babla', images: ['/img/team/aanya_babla.png'], role: 'Marketing Manager' },
   { name: 'Pryya Surarujiroj', images: ['/img/team/pryya_surarujiroj.png'], role: 'Logistics Manager' },
   { name: 'Mirabelle Egilmez', images: ['/img/team/mirabelle_egilmez.png'], role: 'Policy/International Manager' },
+  { name: 'Daniel Eremin', images: ['/img/team/daniel_eremin.png'], role: 'Webmaster' },
 ];
 
 const board = [
@@ -60,27 +60,27 @@ const leadershipStructure = [
 
 const Team: React.FC = () => (
   <Box px={{ xs: 2, md: 6 }} py={6}>
-    <Typography variant="h4" fontWeight={700} mb={2} fontFamily="Inter, Arial, sans-serif" align="center">
+    <Typography variant="h4" fontWeight={700} mb={{ xs: 1, md: 2 }} fontFamily="Inter, Arial, sans-serif" align="center">
       Active Executive Committee
     </Typography>
     <TeamGrid team={execCommittee} />
 
-    <Typography variant="h4" fontWeight={700} mb={2} fontFamily="Inter, Arial, sans-serif" align="center">
+    <Typography variant="h4" fontWeight={700} mb={{ xs: 1, md: 2 }} fontFamily="Inter, Arial, sans-serif" align="center">
       Curriculum Managers
     </Typography>
     <TeamGrid team={curriculumManagers} />
 
-    <Typography variant="h4" fontWeight={700} mb={2} fontFamily="Inter, Arial, sans-serif" align="center">
+    <Typography variant="h4" fontWeight={700} mb={{ xs: 1, md: 2 }} fontFamily="Inter, Arial, sans-serif" align="center">
       Outreach Managers
     </Typography>
     <TeamGrid team={outreachManagers} />
 
-    <Typography variant="h4" fontWeight={700} mb={2} fontFamily="Inter, Arial, sans-serif" align="center">
+    <Typography variant="h4" fontWeight={700} mb={{ xs: 1, md: 2 }} fontFamily="Inter, Arial, sans-serif" align="center">
       Board of Directors
     </Typography>
     <TeamGrid team={board} />
 
-    <Typography variant="h4" fontWeight={700} mb={2} fontFamily="Inter, Arial, sans-serif" align="center">
+    <Typography variant="h4" fontWeight={700} mb={{ xs: 1, md: 2 }} fontFamily="Inter, Arial, sans-serif" align="center">
       Division Leads
     </Typography>
     <TeamGrid team={divisionLeads} />
