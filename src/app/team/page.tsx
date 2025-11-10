@@ -4,42 +4,41 @@ import { TeamGrid } from '../../components/TeamGrid';
 
 // Define team data as constants
 const execCommittee = [
-  { name: 'Shounak Ray Chaudhuri', role: 'President', images: ['/img/team/shounak_ray_chaudhuri.png'] },
-  { name: 'Matthew Hsu', role: 'Co-President', images: ['/img/team/matthew_hsu.png'] },
-  { name: 'Peyton Slape', role: 'VP of Curriculum', images: ['/img/team/peyton_slape.png'] },
-  { name: 'Mirabelle Egilmez', role: 'VP of Outreach', images: ['/img/team/mirabelle_egilmez.png'] },
+  { name: 'Shounak Ray Chaudhuri', role: 'President' },
+  { name: 'Matthew Hsu', role: 'Co-President' },
+  { name: 'Peyton Slape', role: 'VP of Curriculum' },
+  { name: 'Mirabelle Egilmez', role: 'VP of Outreach' },
 ];
 
 const curriculumManagers = [
-  { name: 'Matthew Hsu', images: ['/img/team/matthew_hsu.png'], role: 'Engineering Manager' },
-  { name: 'Kush Kharia', images: ['/img/team/kush_kharia.png'], role: 'Engineering Manager' },
-  { name: 'Forest Liang', images: ['/img/team/forest_liang.png'], role: 'Mentoring Manager' },
-  { name: 'Peyton Slape', images: ['/img/team/peyton_slape.png'], role: 'Programming Manager' },
-  { name: 'Julian Garcia', images: ['/img/team/julian_garcia.png'], role: 'Programming Manager' },
-  { name: 'Colin Thompson', images: ['/img/team/colin_thompson.png'], role: 'Physics/Math Manager' },
-  { name: 'Jayati Babla', images: ['/img/team/jayati_babla.png'], role: 'Natural Sciences Manager' },
+  { name: 'Matthew Hsu', role: 'Engineering Manager' },
+  { name: 'Kush Kharia', role: 'Engineering Manager' },
+  { name: 'Forest Liang', role: 'Mentoring Manager' },
+  { name: 'Peyton Slape', role: 'Programming Manager' },
+  { name: 'Julian Garcia', role: 'Programming Manager' },
+  { name: 'Colin Thompson', role: 'Physics/Math Manager' },
+  { name: 'Jayati Babla', role: 'Natural Sciences Manager' },
 ];
 
 const outreachManagers = [
-  { name: 'Aanya Babla', images: ['/img/team/aanya_babla.png'], role: 'Marketing Manager' },
-  { name: 'Pryya Surarujiroj', images: ['/img/team/pryya_surarujiroj.png'], role: 'Logistics Manager' },
-  { name: 'Mirabelle Egilmez', images: ['/img/team/mirabelle_egilmez.png'], role: 'Policy/International Manager' },
-  { name: 'Daniel Eremin', images: ['/img/team/daniel_eremin.png'], role: 'Webmaster' },
+  { name: 'Aanya Babla', role: 'Marketing Manager' },
+  { name: 'Pryya Surarujiroj', role: 'Logistics Manager' },
+  { name: 'Mirabelle Egilmez', role: 'Policy/International Manager' },
+  { name: 'Daniel Eremin', role: 'Webmaster' },
 ];
 
 const board = [
-  { name: 'Kausik Ray Chaudhuri', images: ['/img/team/kausik_ray_chaudhuri.png'], role: 'Board Chair' },
-  { name: 'J.P. Pierce', images: ['/img/team/jp_pierce.png'], role: 'Board Member' },
-  { name: 'Paul Hsu', images: ['/img/team/nt_leader.png'], role: 'Board Member' },
-  { name: 'Tayyar Egilmez', images: ['/img/team/nt_leader.png'], role: 'Board Member' },
-  { name: 'Jocelyn Slape', images: ['/img/team/nt_leader.png'], role: 'Board Member' },
-  { name: 'Rima Chatterjee', images: ['/img/team/nt_leader.png'], role: 'Board Member' },
-  { name: 'TBD', images: ['/img/team/nt_leader.png'], role: 'Board Member' },
+  { name: 'Kausik Ray Chaudhuri', role: 'Board Chair' },
+  { name: 'J.P. Pierce', role: 'Board Member' },
+  { name: 'Paul Hsu', role: 'Board Member' },
+  { name: 'Tayyar Egilmez', role: 'Board Member' },
+  { name: 'Jocelyn Slape', role: 'Board Member' },
+  { name: 'Rima Chatterjee', role: 'Board Member' },
+  { name: 'TBD', role: 'Board Member' },
 ];
 
 const divisionLeads = Array.from({ length: 8 }, (_, i) => ({
   name: `Division ${i + 1}`,
-  images: ['/img/team/nt_leader.png'],
   role: 'Division Lead',
 }));
 

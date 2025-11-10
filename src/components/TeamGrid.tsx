@@ -8,7 +8,6 @@ import { getTeamImages, getTeamDescription } from '../data/teamData';
 interface TeamMember {
   name: string;
   role: string;
-  images: string[];
 }
 
 interface TeamGridProps {
@@ -20,9 +19,13 @@ export const TeamGrid: React.FC<TeamGridProps> = ({ team }) => {
   const [dialogMember, setDialogMember] = useState<{ name: string; images: string[]; description: string } | null>(null);
 
   const handleLearnMore = (member: TeamMember) => {
+    const allImages = getTeamImages(member.name);
+    // If there's only one image, use it. Otherwise, skip the first (thumbnail) image
+    const carouselImages = allImages.length === 1 ? allImages : allImages.slice(1);
+    
     setDialogMember({
       name: member.name,
-      images: getTeamImages(member.name),
+      images: carouselImages,
       description: getTeamDescription(member)
     });
     setDialogOpen(true);
@@ -41,11 +44,13 @@ export const TeamGrid: React.FC<TeamGridProps> = ({ team }) => {
           '@media (max-width:800px)': { gridTemplateColumns: '1fr' },
         }}
       >
-        {team.map((member, idx) => (
+        {team.map((member, idx) => {
+          const memberImage = getTeamImages(member.name)[0];
+          return (
           <Box key={idx} bgcolor="#303947" color="#fff" borderRadius={2} p={0} display="flex" flexDirection="row" alignItems="center" maxHeight="175px">
             <Box display="flex" flexDirection="column" justifyContent="center" height="100%" pl={0} pr={0} py={2}>
               <img
-                src={member.images[0]}
+                src={memberImage}
                 alt={member.name}
                 style={{
                   borderRadius: 12,
@@ -55,7 +60,7 @@ export const TeamGrid: React.FC<TeamGridProps> = ({ team }) => {
                   display: 'block',
                   maxWidth: '100%',
                 }}
-                srcSet={`${member.images[0]} 175w`}
+                srcSet={`${memberImage} 175w`}
                 sizes="(max-width: 1200px) 150px, 175px"
               />
             </Box>
@@ -119,7 +124,8 @@ export const TeamGrid: React.FC<TeamGridProps> = ({ team }) => {
               </Box>
             </Box>
           </Box>
-        ))}
+          );
+        })}
       </Box>
       {dialogMember && (
         <TeamMemberDialog
