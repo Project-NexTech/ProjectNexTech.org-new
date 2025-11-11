@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { Box, Typography } from '@mui/material';
 import TeamMemberDialog from './TeamMemberDialog';
-import { getTeamImages, getTeamDescription } from '../data/teamData';
+import { getTeamImages, getTeamDescription, getTeamData } from '../data/teamData';
 
 interface TeamMember {
   name: string;
@@ -46,6 +46,7 @@ export const TeamGrid: React.FC<TeamGridProps> = ({ team }) => {
       >
         {team.map((member, idx) => {
           const memberImage = getTeamImages(member.name)[0];
+          const memberData = getTeamData(member.name);
           return (
           <Box key={idx} bgcolor="#303947" color="#fff" borderRadius={2} p={0} display="flex" flexDirection="row" alignItems="center" maxHeight="175px">
             <Box display="flex" flexDirection="column" justifyContent="center" height="100%" pl={0} pr={0} py={2}>
@@ -65,27 +66,53 @@ export const TeamGrid: React.FC<TeamGridProps> = ({ team }) => {
               />
             </Box>
             <Box flex={1} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="center" pl={2} pr={2} py={2}>
-              <Typography
-                variant="h6"
-                fontWeight={700}
-                fontFamily="Inter, Arial, sans-serif"
-                mb={0.5}
-                sx={{
-                  fontSize: {
-                    xs: '1.1rem',
-                    sm: '1.2rem',
-                    md: '1.25rem',
-                  },
-                  '@media (max-width:1600px)': {
-                    fontSize: 'calc(1.25rem - ((1600px - 100vw) / 800 * 0.15rem))',
-                  },
-                  '@media (max-width:1200px)': {
-                    fontSize: '1.1rem',
-                  },
-                }}
-              >
-                {member.name}
-              </Typography>
+              <Box display="flex" alignItems="center" justifyContent="space-between" width="100%" mb={0.5}>
+                <Typography
+                  variant="h6"
+                  fontWeight={700}
+                  fontFamily="Inter, Arial, sans-serif"
+                  sx={{
+                    fontSize: {
+                      xs: '1.1rem',
+                      sm: '1.2rem',
+                      md: '1.25rem',
+                    },
+                    '@media (max-width:1600px)': {
+                      fontSize: 'calc(1.25rem - ((1600px - 100vw) / 800 * 0.15rem))',
+                    },
+                    '@media (max-width:1200px)': {
+                      fontSize: '1.1rem',
+                    },
+                  }}
+                >
+                  {member.name}
+                </Typography>
+                {memberData.isEC && (
+                  <Box
+                    component="span"
+                    title="Executive Committee Member"
+                    sx={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      bgcolor: '#f24c02',
+                      color: '#fff',
+                      borderRadius: 1,
+                      px: 0.75,
+                      py: 0.25,
+                      fontSize: '0.7rem',
+                      fontWeight: 700,
+                      fontFamily: 'Inter, Arial, sans-serif',
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.5px',
+                      flexShrink: 0,
+                      ml: 1,
+                    }}
+                  >
+                    EC
+                  </Box>
+                )}
+              </Box>
               <Typography
                 color="text.secondary"
                 fontFamily="Inter, Arial, sans-serif"

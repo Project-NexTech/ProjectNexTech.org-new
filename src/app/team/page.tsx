@@ -3,7 +3,7 @@ import { Box, Typography } from '@mui/material';
 import { TeamGrid } from '../../components/TeamGrid';
 
 // Define team data as constants
-const execCommittee = [
+const activeExecCommittee = [
   { name: 'Shounak Ray Chaudhuri', role: 'President' },
   { name: 'Matthew Hsu', role: 'Co-President' },
   { name: 'Peyton Slape', role: 'VP of Curriculum' },
@@ -17,7 +17,7 @@ const curriculumManagers = [
   { name: 'Peyton Slape', role: 'Programming Manager' },
   { name: 'Julian Garcia', role: 'Programming Manager' },
   { name: 'Colin Thompson', role: 'Physics/Math Manager' },
-  { name: 'Ishan Jhu', role: 'Physics/Math Manager' },
+  { name: 'Ishan Jha', role: 'Physics/Math Manager' },
   { name: 'Jayati Babla', role: 'Natural Sciences Manager' },
 ];
 
@@ -64,7 +64,7 @@ const Team: React.FC = () => (
     <Typography variant="h4" fontWeight={700} mb={{ xs: 1, md: 2 }} fontFamily="Inter, Arial, sans-serif" align="center">
       Active Executive Committee
     </Typography>
-    <TeamGrid team={execCommittee} />
+    <TeamGrid team={activeExecCommittee} />
 
     <Typography variant="h4" fontWeight={700} mb={{ xs: 1, md: 2 }} fontFamily="Inter, Arial, sans-serif" align="center">
       Curriculum Managers
