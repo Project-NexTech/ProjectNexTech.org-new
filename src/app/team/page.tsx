@@ -17,12 +17,14 @@ const curriculumManagers = [
   { name: 'Peyton Slape', role: 'Programming Manager' },
   { name: 'Julian Garcia', role: 'Programming Manager' },
   { name: 'Colin Thompson', role: 'Physics/Math Manager' },
+  { name: 'Ishan Jhu', role: 'Physics/Math Manager' },
   { name: 'Jayati Babla', role: 'Natural Sciences Manager' },
 ];
 
 const outreachManagers = [
   { name: 'Aanya Babla', role: 'Marketing Manager' },
-  { name: 'Pryya Surarujiroj', role: 'Logistics Manager' },
+  { name: 'Tanvi Gupta', role: 'Logistics Manager' },
+  { name: 'Shounak Ray Chaudhuri', role: 'Logistics Manager' },
   { name: 'Mirabelle Egilmez', role: 'Policy/International Manager' },
   { name: 'Daniel Eremin', role: 'Webmaster' },
 ];

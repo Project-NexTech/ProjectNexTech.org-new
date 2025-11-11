@@ -21,6 +21,8 @@ export const getTeamImages = (name: string): string[] => {
     'Daniel Eremin': ['/img/team/daniel_eremin.png', '/img/team/de_1.png', '/img/team/de_2.png', '/img/team/de_3.png', '/img/team/de_4.png', '/img/team/de_5.png'],
     'Kausik Ray Chaudhuri': ['/img/team/kausik_ray_chaudhuri.png', '/img/team/krc_1.png', '/img/team/krc_2.png', '/img/team/krc_3.png', '/img/team/krc_4.png', '/img/team/krc_5.png'],
     'J.P. Pierce': ['/img/team/jp_pierce.png', '/img/team/jp_1.png', '/img/team/jp_2.png', '/img/team/jp_3.png', '/img/team/jp_4.png', '/img/team/jp_5.png'],
+    'Ishan Jhu': ['/img/team/ishan_jhu.png', '/img/team/ij_1.png', '/img/team/ij_2.png', '/img/team/ij_3.png', '/img/team/ij_4.png', '/img/team/ij_5.png'],
+    'Tanvi Gupta': ['/img/team/tanvi_gupta.png', '/img/team/tg_1.png', '/img/team/tg_2.png', '/img/team/tg_3.png', '/img/team/tg_4.png', '/img/team/tg_5.png'],
     'Paul Hsu': ['/img/team/nt_leader.png'],
     'Tayyar Egilmez': ['/img/team/nt_leader.png'],
     'Jocelyn Slape': ['/img/team/nt_leader.png'],
@@ -33,10 +35,10 @@ export const getTeamImages = (name: string): string[] => {
     'Division 6': ['/img/team/nt_leader.png', '/img/team/d6_1.png', '/img/team/d6_2.png', '/img/team/d6_3.png', '/img/team/d6_4.png', '/img/team/d6_5.png'],
     'Division 7': ['/img/team/nt_leader.png', '/img/team/d7_1.png', '/img/team/d7_2.png', '/img/team/d7_3.png', '/img/team/d7_4.png', '/img/team/d7_5.png'],
     'Division 8': ['/img/team/nt_leader.png', '/img/team/d8_1.png', '/img/team/d8_2.png', '/img/team/d8_3.png', '/img/team/d8_4.png', '/img/team/d8_5.png'],
-    'TBD': ['/img/team/nt_leader.png', '/img/team/tbd_1.png', '/img/team/tbd_2.png', '/img/team/tbd_3.png', '/img/team/tbd_4.png', '/img/team/tbd_5.png'],
+    'TBD': ['/img/team/nt_leader.png'],
   };
   
-  return imageMap[name] || ['/img/team/nt_leader.png', '/img/team/nt_leader.png', '/img/team/nt_leader.png', '/img/team/nt_leader.png', '/img/team/nt_leader.png'];
+  return imageMap[name] || ['/img/team/nt_leader.png'];
 };
 
 export const getTeamDescription = (member: TeamMember): string => {
