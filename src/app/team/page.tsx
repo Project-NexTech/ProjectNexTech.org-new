@@ -2,7 +2,6 @@ import React from 'react';
 import { Box, Typography } from '@mui/material';
 import { TeamGrid } from '../../components/TeamGrid';
 
-// Define team data as constants
 const activeExecCommittee = [
   { name: 'Shounak Ray Chaudhuri', role: 'President' },
   { name: 'Matthew Hsu', role: 'Co-President' },

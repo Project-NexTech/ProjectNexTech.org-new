@@ -23,7 +23,7 @@ const TeamMemberDialog: React.FC<TeamMemberDialogProps> = ({ open, onClose, name
         <CloseIcon />
       </IconButton>
     </DialogTitle>
-  <DialogContent sx={{ minHeight: { xs: 400, sm: 800, md: 1000 }, maxHeight: { xs: 900, sm: 1200, md: 1400 }, overflowY: 'auto', pt: { xs: 1, md: 2 }, pb: { xs: 2, md: 3 } }}>
+  <DialogContent sx={{ maxHeight: { xs: '80vh', sm: '85vh', md: '85vh' }, overflowY: 'auto', pt: { xs: 1, md: 2 }, pb: { xs: 2, md: 3 } }}>
       <Box mb={{ xs: 0.5, md: 3 }}>
         <Carousel showThumbs={false} showStatus={false} infiniteLoop dynamicHeight={false}>
           {images.map((img, idx) => (
@@ -55,10 +55,16 @@ const TeamMemberDialog: React.FC<TeamMemberDialogProps> = ({ open, onClose, name
           '@media (max-width:600px)': {
             fontSize: '0.8rem',
           },
+          '& a': {
+            color: 'primary.main',
+            textDecoration: 'underline',
+            '&:hover': {
+              textDecoration: 'none',
+            },
+          },
         }}
-      >
-        {description}
-      </Typography>
+        dangerouslySetInnerHTML={{ __html: description }}
+      />
     </DialogContent>
   </Dialog>
 );
