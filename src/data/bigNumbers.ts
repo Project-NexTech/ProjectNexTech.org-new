@@ -2,12 +2,12 @@
 // Centralized big numbers/stats for About, Home, and Contribute pages
 
 export const bigNumbers = [
-  { number: '1580+', label: 'Students Taught' },
+  { number: '1700+', label: 'Students Taught' },
   { number: '260+', label: 'Student Volunteers' },
-  { number: '17+', label: 'Countries Reached' },
-  { number: '5150+', label: 'Volunteer Hours' },
-  { number: '20+', label: 'Courses Made' },
-  { number: '$8.9k+', label: 'Amount Raised' },
-  { number: '155+', label: 'Programs Run' },
-  { number: '48+', label: 'Regions' },
+  { number: '18+', label: 'Countries Reached' },
+  { number: '5550+', label: 'Volunteer Hours' },
+  { number: '21', label: 'Courses Made' },
+  { number: '$11.1k+', label: 'Amount Raised' },
+  { number: '170+', label: 'Programs Run' },
+  { number: '128+', label: 'Regions' },
 ];
