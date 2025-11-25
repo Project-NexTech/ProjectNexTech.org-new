@@ -16,6 +16,7 @@ const teamDataMap: Record<string, TeamMemberData> = {
   'Mirabelle Egilmez': { isEC: true },
   'Tanvi Gupta': { isEC: true },
   'Ishan Jha': { isEC: true},
+  'Varshith Vijjapu': { isEC: true },
 };
 
 export const getTeamData = (name: string): TeamMemberData => {
