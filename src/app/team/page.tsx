@@ -32,7 +32,6 @@ const board = [
   { name: 'Kausik Ray Chaudhuri', role: 'Board Chair' },
   { name: 'J.P. Pierce', role: 'Board Member' },
   { name: 'Paul Hsu', role: 'Board Member' },
-  { name: 'Tayyar Egilmez', role: 'Board Member' },
   { name: 'Jocelyn Slape', role: 'Board Member' },
   { name: 'Rima Chatterjee', role: 'Board Member' },
   { name: 'TBD', role: 'Board Member' },
