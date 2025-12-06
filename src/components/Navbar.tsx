@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { AppBar, Toolbar, Typography, Box, Button, IconButton, Drawer, List, ListItem, ListItemButton, ListItemText } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import Link from 'next/link';
-import Image from 'next/image';
+import Image from '@/components/NexImage';
 import { usePathname } from 'next/navigation';
 
 const navLinks = [

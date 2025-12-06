@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Typography, Link as MuiLink } from '@mui/material';
 import Link from 'next/link';
-import Image from 'next/image';
+import Image from '@/components/NexImage';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {

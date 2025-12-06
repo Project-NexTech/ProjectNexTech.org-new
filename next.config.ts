@@ -4,7 +4,10 @@ const nextConfig: NextConfig = {
   devIndicators: false,
   reactStrictMode: true,
   output: "export",
-  images: {unoptimized: true},
+  images: {
+    unoptimized: true,
+    qualities: [100]
+  },
   basePath: "",
 };
 

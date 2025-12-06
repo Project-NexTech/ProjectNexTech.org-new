@@ -1,7 +1,4 @@
 'use client';
-// import Image from 'next/image';
-
-import React, { useState } from 'react';
 // Image paths as constants - Next.js serves files from public directory
 const img_1_1_1 = '/img/programs/1_1_1.png';
 const img_1_1_2 = '/img/programs/1_1_2.png';
@@ -114,11 +111,6 @@ const curriculumPhilosophy = [
 // ];
 
 const Programs: React.FC = () => {
-  const [expanded, setExpanded] = useState<number | null>(null);
-
-  const handleExpandClick = (idx: number) => {
-    setExpanded(expanded === idx ? null : idx);
-  };
 
   return (
       <Box px={{ xs: 2, md: 6 }} py={6}>

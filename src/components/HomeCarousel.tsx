@@ -3,7 +3,7 @@
 import React from 'react';
 import { Box } from '@mui/material';
 import { Carousel } from 'react-responsive-carousel';
-import Image from 'next/image';
+import Image from '@/components/NexImage';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 interface HomeCarouselProps {

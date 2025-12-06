@@ -3,7 +3,7 @@
 import React from 'react';
 import { Dialog, DialogContent, DialogTitle, IconButton, Box, Typography } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
-import Image from 'next/image';
+import Image from '@/components/NexImage';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
