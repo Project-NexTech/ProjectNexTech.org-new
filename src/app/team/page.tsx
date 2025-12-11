@@ -11,7 +11,6 @@ const activeExecCommittee = [
 
 const curriculumManagers = [
   { name: 'Matthew Hsu', role: 'Engineering Manager' },
-  { name: 'Kush Kharia', role: 'Engineering Manager' },
   { name: 'Forest Liang', role: 'Mentoring Manager' },
   { name: 'Varshith Vijjapu', role: 'Programming Manager' },
   { name: 'Julian Garcia', role: 'Programming Manager' },

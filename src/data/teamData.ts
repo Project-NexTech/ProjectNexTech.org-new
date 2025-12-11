@@ -41,7 +41,7 @@ export const getTeamImages = (name: string): string[] => {
     'J.P. Pierce': ['/img/team/jp_pierce.png', '/img/team/jp_1.png', '/img/team/jp_2.png', '/img/team/jp_3.png', '/img/team/jp_4.png', '/img/team/jp_5.png'],
     'Ishan Jha': ['/img/team/ishan_jha.png', '/img/team/ij_1.png', '/img/team/ij_2.png', '/img/team/ij_3.png', '/img/team/ij_4.png', '/img/team/ij_5.png'],
     'Tanvi Gupta': ['/img/team/tanvi_gupta.png', '/img/team/tg_1.png', '/img/team/tg_2.png', '/img/team/tg_3.png', '/img/team/tg_4.png', '/img/team/tg_5.png'],
-    // 'Varshith Vijjapu': ['/img/team/varshith_vijjapu.png', '/img/team/vv_1.png', '/img/team/vv_2.png', '/img/team/vv_3.png', '/img/team/vv_4.png', '/img/team/vv_5.png'],
+    'Varshith Vijjapu': ['/img/team/varshith_vijjapu.png', '/img/team/vv_1.png', '/img/team/vv_2.png', '/img/team/vv_3.png', '/img/team/vv_4.png', '/img/team/vv_5.png'],
     'Paul Hsu': ['/img/team/nt_leader.png'],
     'Tayyar Egilmez': ['/img/team/nt_leader.png'],
     'Jocelyn Slape': ['/img/team/nt_leader.png'],
@@ -100,7 +100,9 @@ export const getTeamDescription = (member: TeamMember): string => {
   else if(member.name === 'Tanvi Gupta') {
     return `Joined Jul 15, 2025 • 11th grade • Lawrence E. Elkins High School • Houston, TX • Executive Committee\n\nTanvi leads Project NexTech's Logistics team, reaching out to new locations and organizing programs. She is also a member of the Executive Committee and teaches programs in Houston. Tanvi volunteers with Project NexTech because she wants to provide others with access to STEM education that she had growing up.\n\nOutside of Project NexTech, Tanvi is very involved with marketing and business for a local company, her school's choir, and conducts faith-driven volunteering for fun.\n\nOther extracurriculars: Research, Engineering, Choir, Reading\n\nInterests: Music, Chemistry, Engineering, Math, Volunteering`;
   }
-  // Varshith Vijjapu
+  else if(member.name === 'Varshith Vijjapu') {
+    return `Joined Jul 19, 2025 • 11th grade • Hamilton High School • Milwaukee, TX • Executive Committee\n\nVarsh leads Project NexTech's Programming team, creating new curriculum about AI and computer science. He is also a member of the Executive Committee and teaches programs in Milwaukee. Varsh volunteers with Project NexTech because he wants to allow others to enrich themselves in STEM without having to pay high fees.\n\nOutside of Project NexTech, Varsh conducts AI research with a team, plays Chess, and competes in rocket competitions.\n\nOther extracurriculars: Research, Machine Learning, Chess, Rocketry\n\nInterests: Math, Chess, Programming, Rocket Science, Politics`;
+  }
 
   else if(member.name === 'TBD') {
     return 'Position to be filled. More information will be added soon.';
