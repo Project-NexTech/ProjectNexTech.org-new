@@ -383,7 +383,7 @@ const Programs: React.FC = () => {
               • Grades 6+ OK, grades 8-12 ideal (US/Canada){"\n"}
               • Ages 16+ (International){"\n"}
               • Projector/TV, Chromebooks/Computers (if possible){"\n"}
-              • Students who are familiar with another programming language are introduced to applications of programming to fields in artificial intelligence, such as computer vision, natural langauge processing, and machine learning.
+              • Students who are familiar with another programming language are introduced to applications of programming to fields in artificial intelligence, such as computer vision, natural language processing, and machine learning.
             </Typography>
           </Box>
           <Box bgcolor="#473024" color="#fff" borderRadius={2} p={2} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="flex-start" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' } }}>
