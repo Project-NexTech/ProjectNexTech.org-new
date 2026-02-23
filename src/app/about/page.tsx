@@ -10,6 +10,8 @@ const partners = [
   { name: 'Francis Parker School', logo: '/img/partners/fps.png', subtitle: 'The eight founding members of Project NexTech were from Francis Parker School. We have a Facilities Use Agreement with the School to be able to host programs on campus for the Linda Vista and wider San Diego community. Our goals align with their mission to promote academic excellence.', url: 'https://www.francisparker.org/' },
   { name: 'Qualcomm', logo: '/img/partners/q.png', subtitle: 'We have received over $4000 in funding from Qualcomm through their grant programs. We also host programs at the Qualcomm campus in San Diego for the Sorrento Valley and wider San Diego community.', url: 'https://www.qualcomm.com/' },
   { name: 'Google', logo: '/img/partners/g.png', subtitle: 'We have a Google for Nonprofits plan, which allows us to use Google Workspace for our work. Free access to this software has been crucial for our Google Drive, Gmail, Google accounts, and many of the embeds powering this website.', url: 'https://www.google.org/' },
+  { name: 'Cyberius', logo: '/img/partners/cyberius.png', subtitle: 'We work with Cyberius, a F.I.R.S.T. Robotics Competition team from Santa Catarina, Mexico, to support their F.I.R.S.T. LEGO League team and host STEM classes in their region. Our mission aligns with their mission to create opportunities for children across Nuevo Leon through accessible, high-quality STEAM initiatives.', url: 'https://www.instagram.com/cyberius6017/' },
+  // { name: 'Partner Name', logo: '/img/partners/placeholder.png', subtitle: 'Placeholder description for this partner. Describe the nature of the partnership and how it benefits Project NexTech and the community.', url: 'https://example.com/' },
 ];
 
 const galleryImages = [
