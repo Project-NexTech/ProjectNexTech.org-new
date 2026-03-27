@@ -15,6 +15,7 @@ const curriculumManagers = [
   { name: 'Julian Garcia', role: 'Programming Manager' },
   { name: 'Ishan Jha', role: 'Physics/Math Manager' },
   { name: 'Jayati Babla', role: 'Natural Sciences Manager' },
+  { name: 'Pryya Surarujiroj', role: 'Natural Sciences Manager' },
 ];
 
 const outreachManagers = [
