@@ -63,7 +63,7 @@ const Footer: React.FC = () => (
           </Box>
         </Box>
       </Box>
-      <Typography variant="body2" sx={{ fontFamily: 'Inter, Arial, sans-serif', color: '#b0b0b0', textAlign: 'center', paddingTop: 3}}>&copy; 2025 Project NexTech, Inc. All rights reserved.</Typography>
+      <Typography variant="body2" sx={{ fontFamily: 'Inter, Arial, sans-serif', color: '#b0b0b0', textAlign: 'center', paddingTop: 3}}>&copy; 2026 Project NexTech, Inc. All rights reserved.</Typography>
   </Box>
 );
 
