@@ -1,101 +1,83 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 import { TeamGrid } from '../../components/TeamGrid';
+import { TeamGridCompact } from '../../components/TeamGridCompact';
+import { TeamMemberCard } from '../../components/TeamMemberCard';
 
-const activeExecCommittee = [
-  { name: 'Shounak Ray Chaudhuri', role: 'President' },
-  { name: 'Matthew Hsu', role: 'Co-President' },
-  { name: 'Peyton Slape', role: 'VP of Curriculum' },
-  { name: 'Mirabelle Egilmez', role: 'VP of Outreach' },
+const execCommittee = [
+  { name: 'Matthew Hsu', role: 'Director of Operations'},
+  { name: 'Pryya Surarujiroj', role: 'Director of Curriculum'},
+  { name: 'Tanvi Gupta', role: 'Director of Outreach'},
+  { name: 'Mirabelle Egilmez', role: 'Director of Recruitment'},
+  { name: 'Ishan Jha', role: 'Director of Analytics'},
+  { name: 'Daniel Eremin', role: 'Director of Software'},
+];
+const departmentManagers = [
+ { name: 'Forest Liang', role: 'Curriculum Manager'},
+ { name: 'Jayati Babla', role: 'Curriculum Manager'},
+ { name: 'Aanya Babla', role: 'Social Media Manager'},
+];
+const boardOfDirectors = [
+  { name: 'Shounak Ray Chaudhuri', role: 'Chair'},
+  { name: 'Peyton Slape', role: 'Senior Member'},
+  { name: 'Julian Garcia', role: 'Senior Member'},
+  { name: 'Praem Kumar', role: 'Senior Member'},
+];
+const boardOfAdvisors = [
+  { name: 'J.P. Pierce', role: 'Member'},
+  { name: 'Paul Hsu', role: 'Member'},
+  { name: 'Jocelyn Slape', role: 'Member'},
+  { name: 'Rima Chatterjee', role: 'Member'},
+  { name: 'Moumita Chatterjee', role: 'Member'},
+  { name: 'Sumit Anand', role: 'Member'},
+  { name: 'Sam Jha', role: 'Member'},
 ];
 
-const curriculumManagers = [
-  { name: 'Matthew Hsu', role: 'Engineering Manager' },
-  { name: 'Forest Liang', role: 'Mentoring Manager' },
-  { name: 'Julian Garcia', role: 'Programming Manager' },
-  { name: 'Ishan Jha', role: 'Physics/Math Manager' },
-  { name: 'Jayati Babla', role: 'Natural Sciences Manager' },
-  { name: 'Pryya Surarujiroj', role: 'Natural Sciences Manager' },
-];
-
-const outreachManagers = [
-  { name: 'Aanya Babla', role: 'Marketing Manager' },
-  { name: 'Tanvi Gupta', role: 'Logistics Manager' },
-  { name: 'Shounak Ray Chaudhuri', role: 'Logistics Manager' },
-  { name: 'Mirabelle Egilmez', role: 'Policy/International Manager' },
-  { name: 'Daniel Eremin', role: 'Webmaster' },
-];
-
-const board = [
-  { name: 'Kausik Ray Chaudhuri', role: 'Board Chair' },
-  { name: 'J.P. Pierce', role: 'Board Member' },
-  { name: 'Paul Hsu', role: 'Board Member' },
-  { name: 'Jocelyn Slape', role: 'Board Member' },
-  { name: 'Rima Chatterjee', role: 'Board Member' },
-  { name: 'TBD', role: 'Board Member' },
-];
-
-const divisionLeads = Array.from({ length: 8 }, (_, i) => ({
-  name: `Division ${i + 1}`,
-  role: 'Division Lead',
-}));
-
-const leadershipStructure = [
-  {
-    title: 'Executive Committee',
-    description: 'Oversees all operations and strategic direction.'
-  },
-  {
-    title: 'Curriculum & Outreach Managers',
-    description: 'Lead curriculum development and community engagement.'
-  },
-  {
-    title: 'Division Leads',
-    description: 'Coordinate specific program areas and initiatives.'
-  }
-];
+const advisorsChair = { name: 'Kausik Ray Chaudhuri', role: 'Chair' };
+const advisorsMembers = boardOfAdvisors;
 
 const Team: React.FC = () => (
   <Box px={{ xs: 2, md: 6 }} py={6}>
     <Typography variant="h4" fontWeight={700} mb={{ xs: 1, md: 2 }} fontFamily="Inter, Arial, sans-serif" align="center">
-      Active Executive Committee
+      Executive Committee
     </Typography>
-    <TeamGrid team={activeExecCommittee} />
+    <TeamGrid team={execCommittee} />
 
     <Typography variant="h4" fontWeight={700} mb={{ xs: 1, md: 2 }} fontFamily="Inter, Arial, sans-serif" align="center">
-      Curriculum Managers
+      Department Managers
     </Typography>
-    <TeamGrid team={curriculumManagers} />
-
-    <Typography variant="h4" fontWeight={700} mb={{ xs: 1, md: 2 }} fontFamily="Inter, Arial, sans-serif" align="center">
-      Outreach Managers
-    </Typography>
-    <TeamGrid team={outreachManagers} />
+    <TeamGrid team={departmentManagers} />
 
     <Typography variant="h4" fontWeight={700} mb={{ xs: 1, md: 2 }} fontFamily="Inter, Arial, sans-serif" align="center">
       Board of Directors
     </Typography>
-    <TeamGrid team={board} />
+    <TeamGrid team={boardOfDirectors} />
 
     <Typography variant="h4" fontWeight={700} mb={{ xs: 1, md: 2 }} fontFamily="Inter, Arial, sans-serif" align="center">
-      Division Leads
+      Board of Advisors
     </Typography>
-    <TeamGrid team={divisionLeads} />
-
-    <Typography variant="h4" fontWeight={700} mb={4} fontFamily="Inter, Arial, sans-serif" align="center">
-      Organizational Structure
-    </Typography>
-    <Box display="grid" gridTemplateColumns={{ xs: '1fr', md: '1fr 1fr 1fr' }} gap={4} mb={6}>
-      {leadershipStructure.map((item, idx) => (
-        <Box key={idx} p={4} minHeight={180} display="flex" flexDirection="column" justifyContent="center" bgcolor="transparent" textAlign="center">
-          <Typography variant="h5" fontWeight={700} fontFamily="Inter, Arial, sans-serif" mb={1} align="center">
-            {item.title}
-          </Typography>
-          <Typography color="text.secondary" fontFamily="Inter, Arial, sans-serif" align="center">
-            {item.description}
-          </Typography>
-        </Box>
-      ))}
+    <Box
+      sx={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        gap: { xs: 1, md: 4 },
+        alignItems: 'flex-start',
+        mb: { xs: 1, md: 4 },
+      }}
+    >
+      <Box
+        sx={{
+          width: '100%',
+          flexShrink: 0,
+          '@media (min-width:1200px)': { width: '33.333%' },
+          '@media (min-width:1600px)': { width: '25%' },
+        }}
+      >
+        <TeamMemberCard member={advisorsChair} />
+      </Box>
+      <Box sx={{ flex: 1, minWidth: 'min-content', width: '100%', overflowX: 'auto' }}>
+        <TeamGridCompact team={advisorsMembers} />
+      </Box>
     </Box>
   </Box>
 );

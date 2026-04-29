@@ -1,5 +1,8 @@
 {
     "eslint.format.enable": true,
     "editor.defaultFormatter": null,
-    "eslint.lintTask.enable": true
+    "eslint.lintTask.enable": true,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    }
 }

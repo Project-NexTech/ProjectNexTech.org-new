@@ -10,14 +10,13 @@ export interface TeamMemberData {
 }
 
 const teamDataMap: Record<string, TeamMemberData> = {
-  'Shounak Ray Chaudhuri': { isEC: true },
-  'Matthew Hsu': { isEC: true },
-  'Peyton Slape': { isEC: true },
-  'Mirabelle Egilmez': { isEC: true },
-  'Tanvi Gupta': { isEC: true },
-  'Ishan Jha': { isEC: true},
-  'Varshith Vijjapu': { isEC: true },
-};
+  // 'Matthew Hsu': { isEC: true },
+  // 'Mirabelle Egilmez': { isEC: true },
+  // 'Tanvi Gupta': { isEC: true },
+  // 'Ishan Jha': { isEC: true},
+  // 'Daniel Eremin': { isEC: true },
+  // 'Pryya Surarujiroj': { isEC: true },
+}; // Commenting these out for now since the badge isn't needed due to the new structure of the leadership team
 
 export const getTeamData = (name: string): TeamMemberData => {
   return teamDataMap[name] || { isEC: false };
@@ -42,6 +41,7 @@ export const getTeamImages = (name: string): string[] => {
     'Ishan Jha': ['/img/team/ishan_jha.png', '/img/team/ij_1.png', '/img/team/ij_2.png', '/img/team/ij_3.png', '/img/team/ij_4.png', '/img/team/ij_5.png'],
     'Tanvi Gupta': ['/img/team/tanvi_gupta.png', '/img/team/tg_1.png', '/img/team/tg_2.png', '/img/team/tg_3.png', '/img/team/tg_4.png', '/img/team/tg_5.png'],
     'Varshith Vijjapu': ['/img/team/varshith_vijjapu.png', '/img/team/vv_1.png', '/img/team/vv_2.png', '/img/team/vv_3.png', '/img/team/vv_4.png', '/img/team/vv_5.png'],
+    'Praem Kumar': ['/img/team/praem_kumar.png', '/img/team/pk_1.png', '/img/team/pk_2.png', '/img/team/pk_3.png', '/img/team/pk_4.png', '/img/team/pk_5.png'],
     'Paul Hsu': ['/img/team/nt_leader.png'],
     'Tayyar Egilmez': ['/img/team/nt_leader.png'],
     'Jocelyn Slape': ['/img/team/nt_leader.png'],
@@ -103,10 +103,14 @@ export const getTeamDescription = (member: TeamMember): string => {
   else if(member.name === 'Varshith Vijjapu') {
     return `Joined Jul 19, 2025 • 11th grade • Hamilton High School • Milwaukee, WI • Executive Committee\n\nVarsh leads Project NexTech's Programming team, creating new curriculum about AI and computer science. He is also a member of the Executive Committee and teaches programs in Milwaukee. Varsh volunteers with Project NexTech because he wants to allow others to enrich themselves in STEM without having to pay high fees.\n\nOutside of Project NexTech, Varsh conducts AI research with a team, plays Chess, and competes in rocket competitions.\n\nOther extracurriculars: Research, Machine Learning, Chess, Rocketry\n\nInterests: Math, Chess, Programming, Rocket Science, Politics`;
   }
+  else if(member.name === 'Praem Kumar') {
+    return `Praem Kumar is a senior member of the Board of Directors at Project NexTech. More information about him will be added soon.`;
+  }
 
   else if(member.name === 'TBD') {
     return 'Position to be filled. More information will be added soon.';
   }
-  
-  return `${member.name} serves as ${member.role} at Project NexTech. More information about their background and contributions will be added soon.`;
+  else {
+    return `${member.name} serves as ${member.role} at Project NexTech. More information about their background and contributions will be added soon.`;
+  }
 };
