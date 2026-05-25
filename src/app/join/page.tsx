@@ -112,7 +112,7 @@ const Join: React.FC = () => (
         <Box display="flex" justifyContent="center">
           <iframe
             title="Slideshow embed"
-            src="https://docs.google.com/presentation/d/e/2PACX-1vTNAnLNnWuJEpG7wYFiesXMxCOJVwZif0NisDPDbbVt-F-d1K_M0h-pbH86B9Alf7JSZNKnlJjgwgML/pubembed?start=false&loop=false&delayms=3000"
+            src="https://docs.google.com/presentation/d/e/2PACX-1vTMRe5ohfcSK208TugQNBneEb-0pdRfM-7Z-aY55nKSu9zUDd3wyK40giYneeY5UR0wI4Uh5oulXvMB/pubembed?start=false&loop=false&delayms=3000"
             frameBorder="0"
             width="1055"
             height="630"
