@@ -34,7 +34,7 @@ export const getTeamImages = (name: string): string[] => {
     'Colin Thompson': ['/img/team/colin_thompson.png', '/img/team/ct_1.png', '/img/team/ct_2.png', '/img/team/ct_3.png', '/img/team/ct_4.png', '/img/team/ct_5.png'],
     'Jayati Babla': ['/img/team/jayati_babla.png', '/img/team/jb_1.png', '/img/team/jb_2.png', '/img/team/jb_3.png', '/img/team/jb_4.png'],
     'Aanya Babla': ['/img/team/aanya_babla.png', '/img/team/ab_1.png', '/img/team/ab_2.png', '/img/team/ab_3.png', '/img/team/ab_4.png'],
-    'Pryya Surarujiroj': ['/img/team/pryya_surarujiroj.png', '/img/team/js_1.png', '/img/team/js_2.png', '/img/team/js_3.png', '/img/team/js_4.png', '/img/team/js_5.png'],
+    'Pryya "Sompan" Surarujiroj': ['/img/team/pryya_surarujiroj.png', '/img/team/js_1.png', '/img/team/js_2.png', '/img/team/js_3.png', '/img/team/js_4.png'],
     'Daniel Eremin': ['/img/team/daniel_eremin.png', '/img/team/de_1.png', '/img/team/de_2.png', '/img/team/de_3.png', '/img/team/de_4.png', '/img/team/de_5.png'],
     'Kausik Ray Chaudhuri': ['/img/team/kausik_ray_chaudhuri.png', '/img/team/krc_1.png', '/img/team/krc_2.png', '/img/team/krc_3.png', '/img/team/krc_4.png', '/img/team/krc_5.png'],
     'J.P. Pierce': ['/img/team/jp_pierce.png', '/img/team/jp_1.png', '/img/team/jp_2.png', '/img/team/jp_3.png', '/img/team/jp_4.png', '/img/team/jp_5.png'],
@@ -105,6 +105,9 @@ export const getTeamDescription = (member: TeamMember): string => {
   }
   else if(member.name === 'Praem Kumar') {
     return `Praem Kumar is a senior member of the Board of Directors at Project NexTech. More information about him will be added soon.`;
+  }
+  else if(member.name === 'Pryya "Sompan" Surarujiroj') {
+    return `Joined April 1, 2025 • 11th grade • Rancho Bernardo High School • San Diego, CA • Executive Committee\n\nSompan develops curriculum about chemistry, biology, and earth science. She also helps book and teach programs in San Diego. Sompan volunteers with Project NexTech to give back to her community and share her passion for STEM with students who may be less fortunate.\n\nOutside of Project NexTech, Sompan is a member of her school's Color Guard and is a member of FRC Team 2658. She also teaches programming for a local business.`;
   }
 
   else if(member.name === 'TBD') {

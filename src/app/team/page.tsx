@@ -6,7 +6,7 @@ import { TeamMemberCard } from '../../components/TeamMemberCard';
 
 const execCommittee = [
   { name: 'Matthew Hsu', role: 'Director of Operations'},
-  { name: 'Pryya Surarujiroj', role: 'Director of Curriculum'},
+  { name: 'Pryya "Sompan" Surarujiroj', role: 'Director of Curriculum'},
   { name: 'Tanvi Gupta', role: 'Director of Outreach'},
   { name: 'Mirabelle Egilmez', role: 'Director of Recruitment'},
   { name: 'Ishan Jha', role: 'Director of Analytics'},
