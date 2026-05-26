@@ -107,7 +107,7 @@ export const getTeamDescription = (member: TeamMember): string => {
     return `Praem Kumar is a senior member of the Board of Directors at Project NexTech. More information about him will be added soon.`;
   }
   else if(member.name === 'Pryya "Sompan" Surarujiroj') {
-    return `Joined April 1, 2025 • 11th grade • Rancho Bernardo High School • San Diego, CA • Executive Committee\n\nSompan develops curriculum about chemistry, biology, and earth science. She also helps book and teach programs in San Diego. Sompan volunteers with Project NexTech to give back to her community and share her passion for STEM with students who may be less fortunate.\n\nOutside of Project NexTech, Sompan is a member of her school's Color Guard and is a member of FRC Team 2658. She also teaches programming for a local business.`;
+    return `Joined April 1, 2025 • 11th grade • Rancho Bernardo High School • San Diego, CA • Executive Committee\n\nSompan develops curriculum about chemistry, biology, and earth science. She also helps book and teach programs in San Diego. Sompan volunteers with Project NexTech to give back to her community and share her passion for STEM with students who may be less fortunate.\n\nOutside of Project NexTech, Sompan is a member of her school's Color Guard and is a member of FRC Team 2658. She also teaches programming for a local business.\n\nInterests: Biology, Neuroscience, Programming, Colorguard, Art`;
   }
 
   else if(member.name === 'TBD') {
