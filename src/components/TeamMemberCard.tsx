@@ -12,9 +12,10 @@ interface TeamMember {
 
 interface TeamMemberCardProps {
   member: TeamMember;
+  hideLearnMore?: boolean;
 }
 
-export const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => {
+export const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, hideLearnMore }) => {
   const [dialogOpen, setDialogOpen] = useState(false);
   const memberImage = getTeamImages(member.name)[0];
   const memberData = getTeamData(member.name);
@@ -41,7 +42,7 @@ export const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => {
             sizes="(max-width: 1200px) 150px, 143px"
           />
         </Box>
-        <Box flex={1} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="center" pl={4} pr={2} pt={2} pb={1}>
+        <Box flex={1} display="flex" flexDirection="column" alignItems="flex-start" justifyContent={hideLearnMore ? "flex-start" : "center"} pl={4} pr={2} pt={hideLearnMore ? 3 : 2} pb={1}>
           <Box display="flex" alignItems="center" justifyContent="space-between" width="100%" mb={0.5}>
             <Typography
               variant="h6"
@@ -109,22 +110,24 @@ export const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => {
           >
             {member.role}
           </Typography>
-          <Box mt={1}>
-            <button
-              style={{
-                background: '#f24c02',
-                color: '#fff',
-                border: 'none',
-                borderRadius: 6,
-                padding: '6px 16px',
-                fontWeight: 600,
-                cursor: 'pointer',
-                fontFamily: 'Inter, Arial, sans-serif',
-                fontSize: 14,
-              }}
-              onClick={() => setDialogOpen(true)}
-            >Learn more</button>
-          </Box>
+          {!hideLearnMore && (
+            <Box mt={1}>
+              <button
+                style={{
+                  background: '#f24c02',
+                  color: '#fff',
+                  border: 'none',
+                  borderRadius: 6,
+                  padding: '6px 16px',
+                  fontWeight: 600,
+                  cursor: 'pointer',
+                  fontFamily: 'Inter, Arial, sans-serif',
+                  fontSize: 14,
+                }}
+                onClick={() => setDialogOpen(true)}
+              >Learn more</button>
+            </Box>
+          )}
         </Box>
       </Box>
       <TeamMemberDialog

@@ -36,7 +36,7 @@ export const getTeamImages = (name: string): string[] => {
     'Aanya Babla': ['/img/team/aanya_babla.png', '/img/team/ab_1.png', '/img/team/ab_2.png', '/img/team/ab_3.png', '/img/team/ab_4.png'],
     'Pryya "Sompan" Surarujiroj': ['/img/team/pryya_surarujiroj.png', '/img/team/js_1.png', '/img/team/js_2.png', '/img/team/js_3.png', '/img/team/js_4.png'],
     'Daniel Eremin': ['/img/team/daniel_eremin.png', '/img/team/de_1.png', '/img/team/de_2.png', '/img/team/de_3.png', '/img/team/de_4.png', '/img/team/de_5.png'],
-    'Kausik Ray Chaudhuri': ['/img/team/kausik_ray_chaudhuri.png', '/img/team/krc_1.png', '/img/team/krc_2.png', '/img/team/krc_3.png', '/img/team/krc_4.png', '/img/team/krc_5.png'],
+    'Kausik Ray Chaudhuri': ['/img/team/kausik_ray_chaudhuri.png'],
     'J.P. Pierce': ['/img/team/jp_pierce.png', '/img/team/jp_1.png', '/img/team/jp_2.png', '/img/team/jp_3.png', '/img/team/jp_4.png', '/img/team/jp_5.png'],
     'Ishan Jha': ['/img/team/ishan_jha.png', '/img/team/ij_1.png', '/img/team/ij_2.png', '/img/team/ij_3.png', '/img/team/ij_4.png', '/img/team/ij_5.png'],
     'Tanvi Gupta': ['/img/team/tanvi_gupta.png', '/img/team/tg_1.png', '/img/team/tg_2.png', '/img/team/tg_3.png', '/img/team/tg_4.png', '/img/team/tg_5.png'],

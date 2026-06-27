@@ -73,7 +73,7 @@ const Team: React.FC = () => (
           '@media (min-width:1600px)': { width: '25%' },
         }}
       >
-        <TeamMemberCard member={advisorsChair} />
+        <TeamMemberCard member={advisorsChair} hideLearnMore />
       </Box>
       <Box sx={{ flex: 1, minWidth: 'min-content', width: '100%', overflowX: 'auto' }}>
         <TeamGridCompact team={advisorsMembers} />
