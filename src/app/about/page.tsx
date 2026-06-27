@@ -103,11 +103,11 @@ export default function About() {
               (idx % 2 === 0 ? '#f24c02' : '#4083cc') :
               (idx % 2 === 0 ? '#4083cc' : '#f24c02');
             return (
-              <Box key={idx} bgcolor="#473024" color="#fff" borderRadius={2} textAlign="center" py={5} px={2} display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-                <Typography variant="h3" fontWeight={700} color={numberColor} fontFamily="Inter, Arial, sans-serif">
+              <Box key={idx} bgcolor="#473024" color="#fff" borderRadius={2} textAlign="center" py={{ xs: 3, md: 5 }} px={2} display="flex" flexDirection="column" alignItems="center" justifyContent="center">
+                <Typography variant="h3" fontWeight={700} color={numberColor} fontFamily="Inter, Arial, sans-serif" sx={{ fontSize: { xs: '1.6rem', md: '3rem' } }}>
                   {item.number}
                 </Typography>
-                <Typography color="#b0b0b0" fontFamily="Inter, Arial, sans-serif">
+                <Typography color="#b0b0b0" fontFamily="Inter, Arial, sans-serif" sx={{ fontSize: { xs: '0.8rem', md: '1rem' } }}>
                   {item.label}
                 </Typography>
               </Box>
@@ -128,6 +128,23 @@ export default function About() {
             width="100%"
             height="640"
             style={{ border: 0, width: '100%' }}
+            allowFullScreen
+            loading="lazy"
+          ></iframe>
+        </Box>
+      </Box>
+      {/* Constitution Embed */}
+      <Box mb={6} textAlign="center">
+        <Typography variant="h4" fontWeight={700} mb={2} fontFamily="Inter, Arial, sans-serif" align="center">
+          Our Constitution
+        </Typography>
+        <Box sx={{ width: { xs: '100%', md: '50%' } }} mx="auto" overflow="hidden">
+          <iframe
+            title="Project NexTech Constitution"
+            src="https://docs.google.com/document/d/e/2PACX-1vSaaff-zcklIabTOdzSE4GacQ1o_YwWSuJXzWKtF8ProTeE81jBwwpeOZxkSifKN9ITkHyj9y6i9Udw/pub?embedded=true"
+            width="100%"
+            height="640"
+            style={{ border: 0, width: 'calc(100% + 17px)', display: 'block' }}
             allowFullScreen
             loading="lazy"
           ></iframe>
