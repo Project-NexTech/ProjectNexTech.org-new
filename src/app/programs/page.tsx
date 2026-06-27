@@ -48,9 +48,9 @@ const img_4_1_3 = '/img/programs/4_1_3.png';
 const img_4_2_1 = '/img/programs/4_2_1.png';
 const img_4_2_2 = '/img/programs/4_2_2.png';
 const img_4_2_3 = '/img/programs/4_2_3.png';
-const img_4_3_1 = '/img/programs/4_3_1.png';
-const img_4_3_2 = '/img/programs/4_3_2.png';
-const img_4_3_3 = '/img/programs/4_3_3.png';
+// const img_4_3_1 = '/img/programs/4_3_1.png';
+// const img_4_3_2 = '/img/programs/4_3_2.png';
+// const img_4_3_3 = '/img/programs/4_3_3.png';
 const img_5_1_1 = '/img/programs/5_1_1.png';
 const img_5_1_2 = '/img/programs/5_1_2.png';
 const img_5_1_3 = '/img/programs/5_1_3.png';
@@ -60,22 +60,25 @@ const img_5_2_3 = '/img/programs/5_2_3.png';
 const img_5_3_1 = '/img/programs/5_3_1.png';
 const img_5_3_2 = '/img/programs/5_3_2.png';
 const img_5_3_3 = '/img/programs/5_3_3.png';
+const img_5_4_1 = '/img/programs/5_4_1.png';
+const img_5_4_2 = '/img/programs/5_4_2.png';
+const img_5_4_3 = '/img/programs/5_4_3.png';
 import { Box, Typography } from '@mui/material';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const curriculumPhilosophy = [
   {
-    title: 'Hands-On Learning',
-    description: 'We believe students learn best by doing. Our programs are interactive and project-based.'
+    title: 'Authenticity',
+    description: 'We act with integrity, respect, and genuine care for the dignity of every student and volunteer while providing resources to communities of students.'
   },
   {
-    title: 'Accessible for All',
-    description: 'We design our curriculum to be inclusive and adaptable for students of all backgrounds.'
+    title: 'Impact',
+    description: 'We prioritize work that has a direct impact on students, focusing on running in-person volunteer-run programs in each of our global regions.'
   },
   {
-    title: 'Real-World Impact',
-    description: 'Our courses connect STEM concepts to real-world problems and solutions.'
+    title: 'Real-World Relevance',
+    description: 'We teach subjects with real-world significance, including interactive activities that connect to practical experiences to help students explore STEM fields.'
   }
 ];
 
@@ -241,7 +244,7 @@ const Programs: React.FC = () => {
               • Grades 5-12 OK, grades 6-10 ideal (US/Canada){"\n"}
               • Ages 13+ (International){"\n"}
               • Projector/TV, Chromebooks/Computers (if possible){"\n"}
-              • Students learn how to create 3D models and machines through computer-aided design in Onshape, a software used in robotics and industry across the world.
+              • Students learn how to create 3D models and machines through computer-aided design in Onshape, a professional software used in robotics and industry across the world.
             </Typography>
           </Box>
           <Box bgcolor="#473024" color="#fff" borderRadius={2} p={2} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="flex-start" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' } }}>
@@ -255,7 +258,7 @@ const Programs: React.FC = () => {
               • Grades 5-12 OK, grades 6-8 ideal (US/Canada){"\n"}
               • Ages 12-18+ (International){"\n"}
               • Projector/TV{"\n"}
-              • Students are introduced to more applicable engineering concepts through engineering challenges that walk students through real-world fields and problems faced by engineers.
+              • Students learn about the principles of electrical engineering through activities and experiments with real-world components and circuits that engineers use. 
             </Typography>
           </Box>
         </Box>
@@ -284,7 +287,7 @@ const Programs: React.FC = () => {
               • Grades 4-8 (US/Canada){"\n"}
               • Ages 9-16 (International){"\n"}
               • LEGO SPIKE Prime kits, mats, project boards, and a workspace{"\n"}
-              • This course is designed for students and parents to be able to learn the basics of F.I.R.S.T. Lego League to start a robotics team and prepare for competition, supported by volunteer coaches with past participation or judging experience in FLL. This course is being co-developed with FTC Team 23511, Seattle Solvers.
+              • Our volunteer coaches with past participation or judging experience in F.I.R.S.T work with parents and students to start and/or support a F.I.R.S.T Lego League robotics team, prepare for competition, and build engineering and soft skills that are useful in the real world. 
             </Typography>
           </Box>
           <Box bgcolor="#473024" color="#fff" borderRadius={2} p={2} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="flex-start" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' } }}>
@@ -298,7 +301,7 @@ const Programs: React.FC = () => {
               • Grades 6-12 OK, grades 7-10 ideal (US/Canada){"\n"}
               • Ages 12-18 (International){"\n"}
               • FTC Robot kits, project boards, computers, and a workspace{"\n"}
-              • This course is designed for students and parents to be able to learn the basics of F.I.R.S.T. Tech Challenge to start a robotics team and prepare for competition, supported by volunteer coaches who have past participation or judging experience in FTC. This course is being co-developed with FTC Team 22105, Runtime Terror.
+              • Our volunteer coaches with past participation or judging experience in F.I.R.S.T work with parents and students to start and/or support a F.I.R.S.T Tech Challenge robotics team, prepare for competition, and build engineering and soft skills that are useful in the real world.
             </Typography>
           </Box>
           <Box bgcolor="#473024" color="#fff" borderRadius={2} p={2} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="flex-start" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' } }}>
@@ -383,7 +386,7 @@ const Programs: React.FC = () => {
               • Grades 6+ OK, grades 8-12 ideal (US/Canada){"\n"}
               • Ages 16+ (International){"\n"}
               • Projector/TV, Chromebooks/Computers (if possible){"\n"}
-              • Students who are familiar with another programming language are introduced to applications of programming to fields in artificial intelligence, such as computer vision, natural language processing, and machine learning.
+              • Students learn about the applications of programming with Python and math in the field of artificial intelligence such as computer vision, natural language processing, and machine learning.
             </Typography>
           </Box>
           <Box bgcolor="#473024" color="#fff" borderRadius={2} p={2} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="flex-start" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' } }}>
@@ -457,7 +460,7 @@ const Programs: React.FC = () => {
               • Students use projects and demonstrations to learn about key classical physics concepts like forces, motion, gravity, buoyancy, springs, and more, while building their own machines!
             </Typography>
           </Box>
-          <Box bgcolor="#473024" color="#fff" borderRadius={2} p={2} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="flex-start" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' } }}>
+          {/* <Box bgcolor="#473024" color="#fff" borderRadius={2} p={2} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="flex-start" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' } }}>
             <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay={false} width="100%" dynamicHeight={false}>
               <img src={img_4_3_1} alt="Intro to Electromagnetism 1" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
               <img src={img_4_3_2} alt="Intro to Electromagnetism 2" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
@@ -470,7 +473,7 @@ const Programs: React.FC = () => {
               • Projector/TV, Whiteboard, Paper/Pencils (if possible){"\n"}
               • Students use projects and demonstrations to learn about key elements of electromagnetism and modern physics concepts like magnets, fields, circuits, waves, and relativity!
             </Typography>
-          </Box>
+          </Box> */}
         </Box>
 
         {/* Natural Sciences Section */}
@@ -526,6 +529,20 @@ const Programs: React.FC = () => {
               • Ages 10+ (International){"\n"}
               • Projector/TV, Whiteboard (if possible){"\n"}
               • Students learn about key concepts of chemistry through labs and experiments, including molecular structure, types of reactions, and more.
+            </Typography>
+          </Box>
+          <Box bgcolor="#473024" color="#fff" borderRadius={2} p={2} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="flex-start" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' } }}>
+            <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay={false} width="100%" dynamicHeight={false}>
+              <img src={img_5_4_1} alt="Natural Sciences Workshops 1" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+              <img src={img_5_4_2} alt="Natural Sciences Workshops 2" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+              <img src={img_5_4_3} alt="Natural Sciences Workshops 3" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            </Carousel>
+            <Typography fontWeight={700} mt={2} fontFamily="Inter, Arial, sans-serif" sx={{ fontSize: { xs: 18, md: 20 } }}>[5.4] Natural Sciences Workshops*</Typography>
+            <Typography color="text.secondary" fontFamily="Inter, Arial, sans-serif" sx={{ whiteSpace: 'pre-line' }}>
+              • Grades 1-8 OK, grades 3-5 ideal (US/Canada){"\n"}
+              • Ages 10+ (International){"\n"}
+              • Projector/TV, Whiteboard (if possible){"\n"}
+              • Students learn about various natural sciences concepts through fun hands-on experiments and activities such as making hand sanitizer, dissecting plants, making slime, and more!
             </Typography>
           </Box>
         </Box>
