@@ -3,22 +3,6 @@ import { Box, Typography, Card, CardContent } from '@mui/material';
 import { bigNumbers as globalBigNumbers } from '../../data/bigNumbers.ts';
 import DonorboxEmbed from '../../components/DonorboxEmbed';
 
-const contributeTopColumns = [
-  {
-    title: 'Why Contribute?',
-    body: 'Support our mission to make STEM education accessible for all. Your contribution helps us reach more students and schools.'
-  },
-  {
-    title: 'How to Contribute',
-    body: 'Donate, sponsor a program, or provide resources. Every bit helps us grow and impact more lives.'
-  },
-  {
-    title: 'Who Can Contribute?',
-    body: 'Individuals, organizations, and companies are all welcome to support our cause.'
-  }
-];
-
-
 // Only show the relevant stats for Contribute page
 const bigNumbers = [
   globalBigNumbers[0], // Students Taught
@@ -29,62 +13,46 @@ const bigNumbers = [
 
 const Contribute: React.FC = () => {
   return (
-      <Box px={{ xs: 2, md: 6 }} py={6} sx={{ width: '100%', boxSizing: 'border-box' }}>
-        {/* Three-column intro section */}
+      <Box px={{ xs: 2, md: 6 }} pt={6} pb={3} sx={{ width: '100%', boxSizing: 'border-box' }}>
+        {/* Three-column section: donation portal, text, partnership form */}
         <Box display="grid" gridTemplateColumns={{ xs: '1fr', md: '1fr 1fr 1fr' }} gap={4} mb={6} sx={{ width: '100%', boxSizing: 'border-box' }}>
-          {contributeTopColumns.map((col, idx) => (
-            <Box key={idx} textAlign="center">
-              <Typography variant="h5" fontWeight={700} fontFamily="Inter, Arial, sans-serif" mb={1} align="center">{col.title}</Typography>
-              <Typography color="text.secondary" align="center">{col.body}</Typography>
-            </Box>
-          ))}
-        </Box>
-
-        {/* Orange box payment portal section - 1 column orange, 2 columns text */}
-        <Box display="grid" gridTemplateColumns={{ xs: '1fr', md: '1fr 1fr 1fr' }} gap={4} mb={6} sx={{ width: '100%', boxSizing: 'border-box' }}>
-          <Box bgcolor="#473024" color="#fff" borderRadius={2} p={4} border="3px solid #f24c02" display="flex" flexDirection="column" alignItems="center" justifyContent="center" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' }, maxWidth: { xs: '100vw' }, overflowX: 'auto' }}>
+          {/* Left: Donation portal */}
+          <Box bgcolor="#473024" color="#fff" borderRadius={2} pt={4} px={4} pb={2} border="3px solid #f24c02" display="flex" flexDirection="column" alignItems="center" justifyContent="center" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' }, maxWidth: { xs: '100vw' }, overflowX: 'auto' }}>
+            <Typography variant="h4" fontWeight={700} fontFamily="Inter, Arial, sans-serif" mb={2} align="center">Make a Donation</Typography>
             <DonorboxEmbed />
           </Box>
-          <Box
-            display="grid"
-            gridTemplateColumns={{ xs: '1fr', md: '1fr', lg: '1fr 1fr' }}
-            gridTemplateRows={{ xs: '1fr 1fr', md: '1fr 1fr', lg: 'none' }}
-            gap={4}
-            alignItems="center"
-            gridColumn={{ md: '2 / span 2' }}
-            sx={{ width: '100%', boxSizing: 'border-box' }}
-          >
-            <Box textAlign="center">
-              <Typography variant="h4" fontWeight={700} fontFamily="Inter, Arial, sans-serif" mb={2} align="center">Make a Donation</Typography>
-              <Typography color="text.secondary" fontFamily="Inter, Arial, sans-serif" mb={2} align="center">Your donation directly funds our programs, resources, and outreach. Thank you for supporting our mission!</Typography>
-            </Box>
-            <Box textAlign="center">
-              <Typography variant="h4" fontWeight={700} fontFamily="Inter, Arial, sans-serif" mb={2} align="center">Other Ways to Help</Typography>
-              <Typography color="text.secondary" fontFamily="Inter, Arial, sans-serif" mb={2} align="center">Contact us to discuss sponsorship, in-kind donations, or volunteering opportunities!</Typography>
-            </Box>
-          </Box>
-        </Box>
 
-        {/* Blue box Google Form section */}
-        <Box display="grid" gridTemplateColumns={{ xs: '1fr', md: '1fr 1fr' }} gap={4} mb={6} sx={{ width: '100%', boxSizing: 'border-box' }}>
-          <Box textAlign="center">
-            <Typography variant="h4" fontWeight={700} fontFamily="Inter, Arial, sans-serif" mb={2} align="center">Sponsor or Partner With Us</Typography>
-            <Typography color="text.secondary" fontFamily="Inter, Arial, sans-serif" mb={2} align="center">Fill out the form to become a sponsor or partner. We welcome support from organizations and companies!</Typography>
+          {/* Middle: Text content */}
+          <Box display="flex" flexDirection="column" justifyContent="center" textAlign="center" gap={4}>
+            <Box>
+              <Typography variant="h4" fontWeight={700} fontFamily="Inter, Arial, sans-serif" mb={2} align="center">Make a Donation</Typography>
+              <Typography color="text.secondary" fontFamily="Inter, Arial, sans-serif" align="center">
+                Your donations support our programs by helping us reimburse volunteers, purchase materials, secure insurance, pay for online services, and have food at our programs. You can choose how you want your money to be spent.
+              </Typography>
+            </Box>
+            <Box>
+              <Typography variant="h4" fontWeight={700} fontFamily="Inter, Arial, sans-serif" mb={2} align="center">Partner with Us</Typography>
+              <Typography color="text.secondary" fontFamily="Inter, Arial, sans-serif" align="center">
+                If you or your organization would like to partner with us by hosting events together or sponsoring us with monetary or in-kind support, please fill out the Partnership Form and we will get back to you soon!
+              </Typography>
+            </Box>
           </Box>
+
+          {/* Right: Partnership form */}
           <Box bgcolor="#303947" color="#fff" borderRadius={2} p={4} border="3px solid #4083cc" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' }, maxWidth: { xs: '100vw' }, overflowX: 'auto' }}>
             <Typography variant="h4" fontWeight={700} fontFamily="Inter, Arial, sans-serif" mb={2} align="center">
-              Sponsorship/Partnership Form
+              Partnership Form
             </Typography>
             <Box sx={{ borderRadius: 2, overflow: 'hidden', boxShadow: 2 }}>
               <iframe
                 title="Sponsor Form"
                 src="https://docs.google.com/forms/d/e/1FAIpQLSfThOoGtbO4ltvp2bOnRIBv-Ivj4qt_MjZdB12cdPIfDdjrnQ/viewform?embedded=true"
                 width="100%"
-                height="500"
+                height="800"
                 frameBorder="0"
                 marginHeight={0}
                 marginWidth={0}
-                style={{ background: '#fff', borderRadius: 8, width: '100%', minHeight: 400, filter: 'invert(85%) hue-rotate(180.0deg)' }}
+                style={{ background: '#fff', borderRadius: 8, width: '100%', minHeight: 700, filter: 'invert(85%) hue-rotate(180.0deg)' }}
               >Loading…</iframe>
             </Box>
           </Box>

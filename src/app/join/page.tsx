@@ -4,57 +4,11 @@ const discordImg = '/img/discord.png';
 const cursorImg = '/img/cursor.png';
 import { Box, Typography } from '@mui/material';
 
-const joinTopColumns = [
-  {
-    title: 'Why Join?',
-    body: 'Be part of a global movement to make STEM education accessible. Connect, learn, and grow with us.'
-  },
-  {
-    title: 'Ways to Get Involved',
-    body: 'Join our Discord, volunteer, or enroll in our programs. There are many ways to contribute and benefit.'
-  },
-  {
-    title: 'Who Can Join?',
-    body: 'Students, educators, and professionals from all backgrounds are welcome. Everyone can make an impact.'
-  }
-];
-
 const Join: React.FC = () => (
-    <Box px={{ xs: 2, md: 6 }} py={6}>
-      {/* Three-column intro section (About page style) */}
-      <Box display="grid" gridTemplateColumns={{ xs: '1fr', md: '1fr 1fr 1fr' }} gap={4} mb={6}>
-        <Box textAlign="center">
-          <Typography variant="h5" fontWeight={700} fontFamily="Inter, Arial, sans-serif" mb={1} align="center">
-            {joinTopColumns[0].title}
-          </Typography>
-          <Typography color="text.secondary" align="center">
-            {joinTopColumns[0].body}
-          </Typography>
-        </Box>
-        <Box textAlign="center">
-          <Typography variant="h5" fontWeight={700} fontFamily="Inter, Arial, sans-serif" mb={1} align="center">
-            {joinTopColumns[1].title}
-          </Typography>
-          <Typography color="text.secondary" align="center">
-            {joinTopColumns[1].body}
-          </Typography>
-        </Box>
-        <Box textAlign="center">
-          <Typography variant="h5" fontWeight={700} fontFamily="Inter, Arial, sans-serif" mb={1} align="center">
-            {joinTopColumns[2].title}
-          </Typography>
-          <Typography color="text.secondary" align="center">
-            {joinTopColumns[2].body}
-          </Typography>
-        </Box>
-      </Box>
-
-      {/* Discord Section - Two Columns, blue box styled like Programs */}
+    <Box px={{ xs: 2, md: 6 }} pt={6} pb={3}>
+      {/* Two-column section: Discord box on left, Volunteer form on right */}
       <Box display="grid" gridTemplateColumns={{ xs: '1fr', md: '1fr 1fr' }} gap={4} mb={6}>
-        <Box textAlign="center">
-          <Typography variant="h4" fontWeight={700} fontFamily="Inter, Arial, sans-serif" mb={2} align="center">Join Our Discord Community</Typography>
-          <Typography color="text.secondary" fontFamily="Inter, Arial, sans-serif" mb={2} align="center">Connect with fellow students, get help from mentors, and stay up to date with our latest programs and events.</Typography>
-        </Box>
+        {/* Left: Discord box */}
         <Box bgcolor="#303947" color="#fff" borderRadius={2} p={4} border="3px solid #4083cc">
           <Typography variant="h4" fontWeight={700} fontFamily="Inter, Arial, sans-serif" mb={2} align="center">
             Join Our Discord Server
@@ -69,18 +23,19 @@ const Join: React.FC = () => (
                 style={{ background: '#fff', borderRadius: 8, width: '100%', minWidth: 200, minHeight: 300, maxWidth: 350 }}
               ></iframe>
             </Box>
-            <Box flex={1} display="flex" flexDirection="column" justifyContent="center" alignItems="center" sx={{ minWidth: 0 }}>
+            <Box flex={1} display={{ xs: 'none', md: 'flex' }} flexDirection="column" justifyContent="center" alignItems="center" sx={{ minWidth: 0 }}>
               <img src={cursorImg} alt="Click cursor" style={{ width: 80, height: 80, marginBottom: -120, marginLeft: 20, pointerEvents: 'none', zIndex: 2, position: 'relative' }} />
               <a href="https://discord.gg/ecJhHVd" target="_blank" rel="noopener noreferrer">
                 <img src={discordImg} alt="Join Discord" style={{ maxWidth: 120, width: '100%', height: 'auto', cursor: 'pointer', border: 'none', background: 'none', boxShadow: 'none', borderRadius: 0 }} />
               </a>
             </Box>
           </Box>
+          <Typography color="text.secondary" fontFamily="Inter, Arial, sans-serif" mt={15} align="center">
+            Our organization operates through Discord, a popular communication platform. Please join our Discord server to begin volunteering, or email <a href="mailto:info@projectnextech.org" style={{ color: '#4083cc' }}>info@projectnextech.org</a> if you would like to volunteer but don&apos;t have access to Discord.
+          </Typography>
         </Box>
-      </Box>
 
-      {/* Volunteer Form Section - Two Columns, orange box styled like Programs */}
-      <Box display="grid" gridTemplateColumns={{ xs: '1fr', md: '1fr 1fr' }} gap={4} mb={6}>
+        {/* Right: Volunteer form */}
         <Box bgcolor="#473024" color="#fff" borderRadius={2} p={4} border="3px solid #f24c02">
           <Typography variant="h4" fontWeight={700} fontFamily="Inter, Arial, sans-serif" mb={2} align="center">
             Enroll as a Volunteer
@@ -97,10 +52,6 @@ const Join: React.FC = () => (
               style={{ background: '#fff', borderRadius: 8, width: '100%', minHeight: 400, filter: 'invert(85%) hue-rotate(180.0deg)' }}
             >Loading…</iframe>
           </Box>
-        </Box>
-        <Box textAlign="center">
-          <Typography variant="h4" fontWeight={700} fontFamily="Inter, Arial, sans-serif" mb={2} align="center">Volunteer Registration</Typography>
-          <Typography color="text.secondary" fontFamily="Inter, Arial, sans-serif" mb={2} align="center">Fill out the form to join our team of passionate volunteers. We welcome students, educators, and professionals from all backgrounds!</Typography>
         </Box>
       </Box>
 
