@@ -25,7 +25,7 @@ export const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, hideLear
 
   return (
     <>
-      <Box bgcolor="#303947" color="#fff" borderRadius={2} p={0} display="flex" flexDirection="row" alignItems="stretch" maxHeight="175px">
+      <Box bgcolor="#303947" color="#fff" borderRadius={2} p={0} display="flex" flexDirection="row" alignItems="stretch" minHeight="175px">
         <Box display="flex" flexDirection="column" justifyContent="flex-end" height="100%" pl={1} pr={1} pt={2.5} pb={0} flexShrink={0}>
           <img
             src={memberImage}
