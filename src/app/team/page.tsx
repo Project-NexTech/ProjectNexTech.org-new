@@ -8,7 +8,6 @@ const execCommittee = [
   { name: 'Matthew Hsu', role: 'Director of Operations'},
   { name: 'Pryya "Sompan" Surarujiroj', role: 'Director of Curriculum'},
   { name: 'Tanvi Gupta', role: 'Director of Outreach'},
-  { name: 'TBD', role: 'Director of Recruitment'},
   { name: 'Ishan Jha', role: 'Director of Analytics'},
   { name: 'Daniel Eremin', role: 'Director of Software'},
 ];

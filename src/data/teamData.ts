@@ -11,7 +11,6 @@ export interface TeamMemberData {
 
 const teamDataMap: Record<string, TeamMemberData> = {
   // 'Matthew Hsu': { isEC: true },
-  // 'Mirabelle Egilmez': { isEC: true },
   // 'Tanvi Gupta': { isEC: true },
   // 'Ishan Jha': { isEC: true},
   // 'Daniel Eremin': { isEC: true },
@@ -27,7 +26,6 @@ export const getTeamImages = (name: string): string[] => {
     'Shounak Ray Chaudhuri': ['/img/team/shounak_ray_chaudhuri.png', '/img/team/src_1.png', '/img/team/src_2.png', '/img/team/src_3.png', '/img/team/src_4.png', '/img/team/src_5.png'],
     'Matthew Hsu': ['/img/team/matthew_hsu.png', '/img/team/mh_1.png', '/img/team/mh_2.png', '/img/team/mh_3.png', '/img/team/mh_4.png', '/img/team/mh_5.png'],
     'Peyton Slape': ['/img/team/peyton_slape.png', '/img/team/ps_1.png', '/img/team/ps_2.png', '/img/team/ps_3.png', '/img/team/ps_4.png', '/img/team/ps_5.png'],
-    'Mirabelle Egilmez': ['/img/team/mirabelle_egilmez.png', '/img/team/me_1.png', '/img/team/me_2.png', '/img/team/me_3.png', '/img/team/me_4.png', '/img/team/me_5.png'],
     'Kush Kharia': ['/img/team/kush_kharia.png', '/img/team/kk_1.png', '/img/team/kk_2.png', '/img/team/kk_3.png', '/img/team/kk_4.png', '/img/team/kk_5.png'],
     'Forest Liang': ['/img/team/forest_liang.png', '/img/team/fl_1.png', '/img/team/fl_2.png', '/img/team/fl_3.png', '/img/team/fl_4.png', '/img/team/fl_5.png'],
     'Julian Garcia': ['/img/team/julian_garcia.png', '/img/team/jg_1.png', '/img/team/jg_2.png', '/img/team/jg_3.png', '/img/team/jg_4.png', '/img/team/jg_5.png'],
@@ -43,7 +41,6 @@ export const getTeamImages = (name: string): string[] => {
     'Varshith Vijjapu': ['/img/team/varshith_vijjapu.png', '/img/team/vv_1.png', '/img/team/vv_2.png', '/img/team/vv_3.png', '/img/team/vv_4.png', '/img/team/vv_5.png'],
     'Praem Kumar': ['/img/team/praem_kumar.png', '/img/team/pk_1.png', '/img/team/pk_2.png', '/img/team/pk_3.png', '/img/team/pk_4.png', '/img/team/pk_5.png'],
     'Paul Hsu': ['/img/team/nt_leader.png'],
-    'Tayyar Egilmez': ['/img/team/nt_leader.png'],
     'Jocelyn Slape': ['/img/team/nt_leader.png'],
     'Rima Chatterjee': ['/img/team/nt_leader.png'],
     'TBD': ['/img/team/nt_leader.png'],
