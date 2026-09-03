@@ -80,7 +80,7 @@ export const getTeamImages = (name: string): string[] => {
 
     'Varshith Vijjapu': ['/img/team/varshith_vijjapu.png', '/img/team/vv_1.png', '/img/team/vv_2.png', '/img/team/vv_3.png', '/img/team/vv_4.png', '/img/team/vv_5.png'],
 
-    'Praem Kumar': ['/img/team/praem_kumar.png', '/img/team/pk_1.png', '/img/team/pk_2.png', '/img/team/pk_3.png', '/img/team/pk_4.png', '/img/team/pk_5.png'],
+    'Praem Kumar': ['/img/team/praem_kumar.png', '/img/team/pk_1.png', '/img/team/pk_2.png', '/img/team/pk_3.png', '/img/team/pk_4.png'],
 
     'Raikishori De': ['/img/team/raikishori_de.png', '/img/team/rd_1.png', '/img/team/rd_2.png', '/img/team/rd_3.png', '/img/team/rd_4.png', '/img/team/rd_5.png'],
 
@@ -166,7 +166,7 @@ export const getTeamDescription = (member: TeamMember): string => {
 
   else if(member.name === 'Praem Kumar') {
 
-    return `Joined June 2, 2024 • 3rd year • UC Riverside • Riverside, CA • Board of Advisors / VP of Outreach\n\nPraem assists with outreach planning and scheduling for Project NexTech, working closely with the commnications department. He also helps create and refine curriculum for STEM programs, including classes taught to student groups.\n\nHe volunteers with Project NexTech to make meaningful STEM education accessible, inspire students to pursue their interests, and grow through leadership and networking with other like-minded mentors.\n\nOutside of Project NexTech, Praem is a full-time UC Riverside environmental engineering student. In his downtime, he reads, takes photos, and stays engaged with sustainability-focused learning and projects.`;
+    return `Joined June 2, 2024 • 3rd year • UC Riverside • Riverside, CA • Board of Directors\n\nPraem assists with outreach planning and scheduling for Project NexTech, working closely with the commnications department. He also helps create and refine curriculum for STEM programs, including classes taught to student groups.\n\nHe volunteers with Project NexTech to make meaningful STEM education accessible, inspire students to pursue their interests, and grow through leadership and networking with other like-minded mentors.\n\nOutside of Project NexTech, Praem is a full-time UC Riverside environmental engineering student. In his downtime, he reads, takes photos, and stays engaged with sustainability-focused learning and projects.`;
 
   }
 
