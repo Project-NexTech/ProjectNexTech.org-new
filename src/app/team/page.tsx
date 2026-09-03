@@ -15,6 +15,7 @@ const departmentManagers = [
  { name: 'Forest Liang', role: 'Curriculum Manager'},
  { name: 'Jayati Babla', role: 'Curriculum Manager'},
  { name: 'Aanya Babla', role: 'Social Media Manager'},
+ { name: 'Raikishori De', role: 'Communications Manager'},
 ];
 const boardOfDirectors = [
   { name: 'Shounak Ray Chaudhuri', role: 'Chair'},
