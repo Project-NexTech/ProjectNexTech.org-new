@@ -51,6 +51,9 @@ const img_4_2_3 = '/img/programs/4_2_3.png';
 // const img_4_3_1 = '/img/programs/4_3_1.png';
 // const img_4_3_2 = '/img/programs/4_3_2.png';
 // const img_4_3_3 = '/img/programs/4_3_3.png';
+const img_4_4_1 = '/img/programs/4_4_1.png';
+const img_4_4_2 = '/img/programs/4_4_2.png';
+const img_4_4_3 = '/img/programs/4_4_3.png';
 const img_5_1_1 = '/img/programs/5_1_1.png';
 const img_5_1_2 = '/img/programs/5_1_2.png';
 const img_5_1_3 = '/img/programs/5_1_3.png';
@@ -474,6 +477,20 @@ const Programs: React.FC = () => {
               • Students use projects and demonstrations to learn about key elements of electromagnetism and modern physics concepts like magnets, fields, circuits, waves, and relativity!
             </Typography>
           </Box> */}
+          <Box bgcolor="#473024" color="#fff" borderRadius={2} p={2} display="flex" flexDirection="column" alignItems="flex-start" justifyContent="flex-start" sx={{ width: { xs: '100%' }, boxSizing: { xs: 'border-box' } }}>
+            <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay={false} width="100%" dynamicHeight={false}>
+              <img src={img_4_4_1} alt="Intro to Astronomy 1" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+              <img src={img_4_4_2} alt="Intro to Astronomy 2" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+              <img src={img_4_4_3} alt="Intro to Astronomy 3" style={{ borderRadius: 8, width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} />
+            </Carousel>
+            <Typography fontWeight={700} mt={2} fontFamily="Inter, Arial, sans-serif" sx={{ fontSize: { xs: 18, md: 20 } }}>[4.4] Intro to Astronomy**</Typography>
+            <Typography color="text.secondary" fontFamily="Inter, Arial, sans-serif" sx={{ whiteSpace: 'pre-line' }}>
+              • Grades 5-12 OK, grades 6-10 ideal (US/Canada){"\n"}
+              • Ages 13+ (International){"\n"}
+              • Projector/TV, Whiteboard, Paper/Pencils (if possible){"\n"}
+              • Students learn about key concepts of astronomy through projects and demonstrations, including deep sky objects, galaxies and stars, astrobiology, cosmology, and more.
+            </Typography>
+          </Box>
         </Box>
 
         {/* Natural Sciences Section */}
